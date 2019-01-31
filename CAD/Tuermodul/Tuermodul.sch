@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -359,280 +359,6 @@ Wire Wire Line
 Connection ~ 1300 5000
 Wire Wire Line
 	1300 5000 1150 5000
-$Comp
-L Device:LED_Small D101
-U 1 1 5C439C47
-P 850 6250
-F 0 "D101" H 600 6300 50  0000 C CNN
-F 1 "rt" H 750 6300 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 850 6250 50  0001 C CNN
-F 3 "~" V 850 6250 50  0001 C CNN
-	1    850  6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D102
-U 1 1 5C439ED0
-P 850 6350
-F 0 "D102" H 600 6400 50  0000 C CNN
-F 1 "rt" H 750 6400 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 850 6350 50  0001 C CNN
-F 3 "~" V 850 6350 50  0001 C CNN
-	1    850  6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D103
-U 1 1 5C439EF6
-P 850 6450
-F 0 "D103" H 600 6500 50  0000 C CNN
-F 1 "rt" H 750 6500 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 850 6450 50  0001 C CNN
-F 3 "~" V 850 6450 50  0001 C CNN
-	1    850  6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D104
-U 1 1 5C439F1E
-P 850 6550
-F 0 "D104" H 600 6600 50  0000 C CNN
-F 1 "rt" H 750 6600 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 850 6550 50  0001 C CNN
-F 3 "~" V 850 6550 50  0001 C CNN
-	1    850  6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D105
-U 1 1 5C439F48
-P 850 6650
-F 0 "D105" H 600 6700 50  0000 C CNN
-F 1 "rt" H 750 6700 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 850 6650 50  0001 C CNN
-F 3 "~" V 850 6650 50  0001 C CNN
-	1    850  6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D106
-U 1 1 5C439F74
-P 850 6750
-F 0 "D106" H 600 6800 50  0000 C CNN
-F 1 "rt" H 750 6800 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 850 6750 50  0001 C CNN
-F 3 "~" V 850 6750 50  0001 C CNN
-	1    850  6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D107
-U 1 1 5C439FA2
-P 850 6850
-F 0 "D107" H 600 6900 50  0000 C CNN
-F 1 "rt" H 750 6900 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 850 6850 50  0001 C CNN
-F 3 "~" V 850 6850 50  0001 C CNN
-	1    850  6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D108
-U 1 1 5C439FD2
-P 850 6950
-F 0 "D108" H 600 7000 50  0000 C CNN
-F 1 "rt" H 750 7000 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 850 6950 50  0001 C CNN
-F 3 "~" V 850 6950 50  0001 C CNN
-	1    850  6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R105
-U 1 1 5C43A02A
-P 1500 6250
-F 0 "R105" V 1450 6450 50  0000 C CNN
-F 1 "330R" V 1450 6650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1500 6250 50  0001 C CNN
-F 3 "~" H 1500 6250 50  0001 C CNN
-	1    1500 6250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R106
-U 1 1 5C43A134
-P 1500 6350
-F 0 "R106" V 1450 6550 50  0000 C CNN
-F 1 "330R" V 1450 6750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1500 6350 50  0001 C CNN
-F 3 "~" H 1500 6350 50  0001 C CNN
-	1    1500 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R107
-U 1 1 5C43A16A
-P 1500 6450
-F 0 "R107" V 1450 6650 50  0000 C CNN
-F 1 "330R" V 1450 6850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1500 6450 50  0001 C CNN
-F 3 "~" H 1500 6450 50  0001 C CNN
-	1    1500 6450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R108
-U 1 1 5C43A1A4
-P 1500 6550
-F 0 "R108" V 1450 6750 50  0000 C CNN
-F 1 "330R" V 1450 6950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1500 6550 50  0001 C CNN
-F 3 "~" H 1500 6550 50  0001 C CNN
-	1    1500 6550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R109
-U 1 1 5C43A1DE
-P 1500 6650
-F 0 "R109" V 1450 6850 50  0000 C CNN
-F 1 "330R" V 1450 7050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1500 6650 50  0001 C CNN
-F 3 "~" H 1500 6650 50  0001 C CNN
-	1    1500 6650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R110
-U 1 1 5C43A21A
-P 1500 6750
-F 0 "R110" V 1450 6950 50  0000 C CNN
-F 1 "330R" V 1450 7150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1500 6750 50  0001 C CNN
-F 3 "~" H 1500 6750 50  0001 C CNN
-	1    1500 6750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R111
-U 1 1 5C43A258
-P 1500 6850
-F 0 "R111" V 1450 7050 50  0000 C CNN
-F 1 "330R" V 1450 7250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1500 6850 50  0001 C CNN
-F 3 "~" H 1500 6850 50  0001 C CNN
-	1    1500 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R112
-U 1 1 5C43A374
-P 1500 6950
-F 0 "R112" V 1450 7150 50  0000 C CNN
-F 1 "330R" V 1450 7350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1500 6950 50  0001 C CNN
-F 3 "~" H 1500 6950 50  0001 C CNN
-	1    1500 6950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2050 6950 1600 6950
-Wire Wire Line
-	950  6950 1400 6950
-Wire Wire Line
-	950  6850 1400 6850
-Wire Wire Line
-	2050 6850 1600 6850
-Wire Wire Line
-	2050 6750 1600 6750
-Wire Wire Line
-	2050 6650 1600 6650
-Wire Wire Line
-	1400 6750 950  6750
-Wire Wire Line
-	950  6650 1400 6650
-Wire Wire Line
-	950  6550 1400 6550
-Wire Wire Line
-	1600 6550 2050 6550
-Wire Wire Line
-	2050 6450 1600 6450
-Wire Wire Line
-	1400 6450 950  6450
-Wire Wire Line
-	2050 6250 1600 6250
-Wire Wire Line
-	1600 6350 2050 6350
-Wire Wire Line
-	950  6350 1400 6350
-$Comp
-L power:GND #PWR0102
-U 1 1 5C456265
-P 650 7150
-F 0 "#PWR0102" H 650 6900 50  0001 C CNN
-F 1 "GND" H 655 6977 50  0000 C CNN
-F 2 "" H 650 7150 50  0001 C CNN
-F 3 "" H 650 7150 50  0001 C CNN
-	1    650  7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	750  6250 650  6250
-Wire Wire Line
-	650  6250 650  6350
-Wire Wire Line
-	750  6950 650  6950
-Connection ~ 650  6950
-Wire Wire Line
-	650  6950 650  7150
-Wire Wire Line
-	750  6850 650  6850
-Connection ~ 650  6850
-Wire Wire Line
-	650  6850 650  6950
-Wire Wire Line
-	750  6750 650  6750
-Connection ~ 650  6750
-Wire Wire Line
-	650  6750 650  6850
-Wire Wire Line
-	750  6650 650  6650
-Connection ~ 650  6650
-Wire Wire Line
-	650  6650 650  6750
-Wire Wire Line
-	750  6550 650  6550
-Connection ~ 650  6550
-Wire Wire Line
-	650  6550 650  6650
-Wire Wire Line
-	750  6450 650  6450
-Connection ~ 650  6450
-Wire Wire Line
-	650  6450 650  6550
-Wire Wire Line
-	750  6350 650  6350
-Connection ~ 650  6350
-Wire Wire Line
-	650  6350 650  6450
-Text Label 1350 6250 2    50   ~ 0
-DoorATx
-Wire Wire Line
-	950  6250 1400 6250
-Text Label 1350 6350 2    50   ~ 0
-DoorARx
-Text Label 1350 6450 2    50   ~ 0
-DoorBTx
-Text Label 1350 6550 2    50   ~ 0
-DoorBRx
-Text Label 1350 6650 2    50   ~ 0
-DoorCTx
-Text Label 1350 6750 2    50   ~ 0
-DoorCRx
-Text Label 1350 6850 2    50   ~ 0
-DoorDTx
-Text Label 1350 6950 2    50   ~ 0
-DoorDRx
 Wire Wire Line
 	2050 3100 2150 3100
 Wire Wire Line
@@ -840,87 +566,96 @@ F 3 "" H 5550 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 5950 5550 6050
-Text HLabel 8400 4750 0    50   Input ~ 0
+Text HLabel 8350 2500 0    50   Input ~ 0
 DoorA_RTS
-Text HLabel 8400 4900 0    50   Input ~ 0
+Text HLabel 8350 2650 0    50   Input ~ 0
 DoorB_RTS
-Text HLabel 8400 5050 0    50   Input ~ 0
+Text HLabel 8350 2800 0    50   Input ~ 0
 DoorC_RTS
-Text HLabel 8400 5200 0    50   Input ~ 0
+Text HLabel 8350 2950 0    50   Input ~ 0
 DoorD_RTS
 $Sheet
-S 8550 4050 1650 2150
+S 8500 1800 1450 3950
 U 5C5BDAF5
 F0 "Peripherie" 50
 F1 "Peripherie.sch" 50
-F2 "DoorA_Lock" O R 10200 4150 50 
-F3 "DoorC_Lock" O R 10200 4450 50 
-F4 "DoorD_Lock" O R 10200 4600 50 
-F5 "DoorA_In" I L 8550 4750 50 
-F6 "DoorB_In" I L 8550 4900 50 
-F7 "DoorC_In" I L 8550 5050 50 
-F8 "DoorD_In" I L 8550 5200 50 
-F9 "DoorB_Lock" O R 10200 4300 50 
-F10 "12V" I L 8550 5500 50 
-F11 "GND" I L 8550 5650 50 
-F12 "DoorA_12V" I R 10200 4850 50 
-F13 "DoorB_12V" I R 10200 5000 50 
-F14 "DoorC_12V" I R 10200 5150 50 
-F15 "DoorD_12V" I R 10200 5300 50 
-F16 "DoorA_VCC" I L 8550 4150 50 
-F17 "DoorB_VCC" I L 8550 4300 50 
-F18 "DoorC_VCC" I L 8550 4450 50 
-F19 "DoorD_VCC" I L 8550 4600 50 
-F20 "UID" I R 10200 5450 50 
-F21 "Fuse_Error" O R 10200 5600 50 
-F22 "5V" I L 8550 5800 50 
+F2 "DoorA_Lock" O R 9950 1900 50 
+F3 "DoorC_Lock" O R 9950 2200 50 
+F4 "DoorD_Lock" O R 9950 2350 50 
+F5 "DoorA_In" I L 8500 2500 50 
+F6 "DoorB_In" I L 8500 2650 50 
+F7 "DoorC_In" I L 8500 2800 50 
+F8 "DoorD_In" I L 8500 2950 50 
+F9 "DoorB_Lock" O R 9950 2050 50 
+F10 "12V" I L 8500 3250 50 
+F11 "GND" I L 8500 3400 50 
+F12 "DoorA_12V" I R 9950 2600 50 
+F13 "DoorB_12V" I R 9950 2750 50 
+F14 "DoorC_12V" I R 9950 2900 50 
+F15 "DoorD_12V" I R 9950 3050 50 
+F16 "DoorA_VCC" I L 8500 1900 50 
+F17 "DoorB_VCC" I L 8500 2050 50 
+F18 "DoorC_VCC" I L 8500 2200 50 
+F19 "DoorD_VCC" I L 8500 2350 50 
+F20 "UID" I R 9950 3200 50 
+F21 "Fuse_Error" O R 9950 3350 50 
+F22 "5V" I L 8500 3550 50 
+F23 "DA_Tx" I R 9950 3500 50 
+F24 "DA_Rx" I R 9950 3650 50 
+F25 "DB_Tx" I R 9950 3800 50 
+F26 "DB_Rx" I R 9950 3950 50 
+F27 "DC_Tx" I R 9950 4100 50 
+F28 "DC_Rx" I R 9950 4250 50 
+F29 "DD_Tx" I R 9950 4400 50 
+F30 "DD_Rx" I R 9950 4550 50 
+F31 "DoorA_MK" I R 9950 4700 50 
+F32 "DoorB_MK" I R 9950 4850 50 
+F33 "DoorC_MK" I R 9950 5000 50 
+F34 "DoorD_MK" I R 9950 5150 50 
+F35 "DoorA_Auto" I R 9950 5300 50 
+F36 "DoorB_Auto" I R 9950 5400 50 
+F37 "DoorC_Auto" I R 9950 5500 50 
+F38 "DoorD_Auto" I R 9950 5600 50 
+F39 "3V3" I L 8500 3750 50 
 $EndSheet
 Wire Wire Line
-	8550 4750 8400 4750
+	8500 2500 8350 2500
 Wire Wire Line
-	8550 4900 8400 4900
+	8500 2650 8350 2650
 Wire Wire Line
-	8400 5050 8550 5050
+	8350 2800 8500 2800
 Wire Wire Line
-	8550 5200 8400 5200
+	8500 2950 8350 2950
 $Comp
 L power:+12V #PWR0133
 U 1 1 5C6544D7
-P 8250 5500
-F 0 "#PWR0133" H 8250 5350 50  0001 C CNN
-F 1 "+12V" H 8300 5650 50  0000 C CNN
-F 2 "" H 8250 5500 50  0001 C CNN
-F 3 "" H 8250 5500 50  0001 C CNN
-	1    8250 5500
+P 8200 3250
+F 0 "#PWR0133" H 8200 3100 50  0001 C CNN
+F 1 "+12V" H 8250 3400 50  0000 C CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0134
 U 1 1 5C6546F2
-P 8250 5650
-F 0 "#PWR0134" H 8250 5400 50  0001 C CNN
-F 1 "GND" H 8250 5500 50  0000 C CNN
-F 2 "" H 8250 5650 50  0001 C CNN
-F 3 "" H 8250 5650 50  0001 C CNN
-	1    8250 5650
+P 8200 3400
+F 0 "#PWR0134" H 8200 3150 50  0001 C CNN
+F 1 "GND" H 8200 3250 50  0000 C CNN
+F 2 "" H 8200 3400 50  0001 C CNN
+F 3 "" H 8200 3400 50  0001 C CNN
+	1    8200 3400
 	0    1    1    0   
 $EndComp
-Text HLabel 10350 4150 2    50   Input ~ 0
+Text HLabel 10300 1900 2    50   Input ~ 0
 DoorA_Lock
-Text HLabel 10350 4300 2    50   Input ~ 0
+Text HLabel 10300 2050 2    50   Input ~ 0
 DoorB_Lock
-Text HLabel 10350 4450 2    50   Input ~ 0
+Text HLabel 10300 2200 2    50   Input ~ 0
 DoorC_Lock
-Text HLabel 10350 4600 2    50   Input ~ 0
+Text HLabel 10300 2350 2    50   Input ~ 0
 DoorD_Lock
-Wire Wire Line
-	10200 4150 10350 4150
-Wire Wire Line
-	10200 4300 10350 4300
-Wire Wire Line
-	10200 4450 10350 4450
-Wire Wire Line
-	10200 4600 10350 4600
 $Comp
 L Device:Crystal_Small Y101
 U 1 1 5C73FABC
@@ -1636,44 +1371,193 @@ Wire Wire Line
 Wire Wire Line
 	2550 800  2700 800 
 Wire Wire Line
-	8450 4150 8550 4150
+	8400 1900 8500 1900
 Wire Wire Line
-	8450 4300 8550 4300
+	8400 2050 8500 2050
 Wire Wire Line
-	8450 4450 8550 4450
+	8400 2200 8500 2200
 Wire Wire Line
-	8450 4600 8550 4600
-Text HLabel 8450 4150 0    50   Input ~ 0
+	8400 2350 8500 2350
+Text HLabel 8400 1900 0    50   Input ~ 0
 DoorA_VCC
-Text HLabel 8450 4300 0    50   Input ~ 0
+Text HLabel 8400 2050 0    50   Input ~ 0
 DoorB_VCC
-Text HLabel 8450 4450 0    50   Input ~ 0
+Text HLabel 8400 2200 0    50   Input ~ 0
 DoorC_VCC
-Text HLabel 8450 4600 0    50   Input ~ 0
+Text HLabel 8400 2350 0    50   Input ~ 0
 DoorD_VCC
-Text HLabel 10450 5600 2    50   Input ~ 0
+Text HLabel 10400 3350 2    50   Input ~ 0
 Error
-Wire Wire Line
-	10450 5600 10200 5600
-Text HLabel 10450 5450 2    50   Input ~ 0
+Text HLabel 10400 3200 2    50   Input ~ 0
 UID
 Wire Wire Line
-	10200 5450 10450 5450
+	8200 3400 8500 3400
 Wire Wire Line
-	8250 5650 8550 5650
-Wire Wire Line
-	8250 5500 8550 5500
+	8200 3250 8500 3250
 $Comp
 L power:+5V #PWR0115
 U 1 1 5C76050F
-P 8250 5800
-F 0 "#PWR0115" H 8250 5650 50  0001 C CNN
-F 1 "+5V" H 8200 5950 50  0000 C CNN
-F 2 "" H 8250 5800 50  0001 C CNN
-F 3 "" H 8250 5800 50  0001 C CNN
-	1    8250 5800
+P 8200 3550
+F 0 "#PWR0115" H 8200 3400 50  0001 C CNN
+F 1 "+5V" H 8150 3700 50  0000 C CNN
+F 2 "" H 8200 3550 50  0001 C CNN
+F 3 "" H 8200 3550 50  0001 C CNN
+	1    8200 3550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8550 5800 8250 5800
+	8500 3550 8200 3550
+Wire Wire Line
+	9950 1900 10300 1900
+Wire Wire Line
+	9950 2050 10300 2050
+Wire Wire Line
+	9950 2200 10300 2200
+Wire Wire Line
+	9950 2350 10300 2350
+Wire Wire Line
+	9950 3200 10400 3200
+Wire Wire Line
+	9950 3350 10400 3350
+Text HLabel 10100 3500 2    50   Input ~ 0
+DA_Tx
+Text HLabel 10100 3650 2    50   Input ~ 0
+DA_Rx
+Text HLabel 10100 3800 2    50   Input ~ 0
+DB_Tx
+Text HLabel 10100 3950 2    50   Input ~ 0
+DB_Rx
+Text HLabel 10100 4100 2    50   Input ~ 0
+DC_Tx
+Text HLabel 10100 4250 2    50   Input ~ 0
+DC_Rx
+Text HLabel 10100 4400 2    50   Input ~ 0
+DD_Tx
+Text HLabel 10100 4550 2    50   Input ~ 0
+DD_Rx
+Text HLabel 10100 4700 2    50   Input ~ 0
+DoorA_MK
+Text HLabel 10100 4850 2    50   Input ~ 0
+DoorB_MK
+Text HLabel 10100 5000 2    50   Input ~ 0
+DoorC_MK
+Text HLabel 10100 5150 2    50   Input ~ 0
+DoorD_MK
+Wire Wire Line
+	9950 3500 10100 3500
+Wire Wire Line
+	10100 3650 9950 3650
+Wire Wire Line
+	9950 3800 10100 3800
+Wire Wire Line
+	10100 3950 9950 3950
+Wire Wire Line
+	9950 4100 10100 4100
+Wire Wire Line
+	10100 4250 9950 4250
+Wire Wire Line
+	9950 4400 10100 4400
+Wire Wire Line
+	10100 4550 9950 4550
+Wire Wire Line
+	9950 5150 10100 5150
+Wire Wire Line
+	10100 5000 9950 5000
+Wire Wire Line
+	9950 4850 10100 4850
+Wire Wire Line
+	10100 4700 9950 4700
+Text HLabel 1850 6250 0    50   Input ~ 0
+DA_Tx
+Text HLabel 1850 6350 0    50   Input ~ 0
+DA_Rx
+Text HLabel 1850 6450 0    50   Input ~ 0
+DB_Tx
+Text HLabel 1850 6550 0    50   Input ~ 0
+DB_Rx
+Text HLabel 1850 6650 0    50   Input ~ 0
+DC_Tx
+Text HLabel 1850 6750 0    50   Input ~ 0
+DC_Rx
+Text HLabel 1850 6850 0    50   Input ~ 0
+DD_Tx
+Text HLabel 1850 6950 0    50   Input ~ 0
+DD_Rx
+Wire Wire Line
+	1850 6250 2050 6250
+Wire Wire Line
+	2050 6350 1850 6350
+Wire Wire Line
+	1850 6450 2050 6450
+Wire Wire Line
+	2050 6550 1850 6550
+Wire Wire Line
+	1850 6650 2050 6650
+Wire Wire Line
+	2050 6750 1850 6750
+Wire Wire Line
+	1850 6850 2050 6850
+Wire Wire Line
+	2050 6950 1850 6950
+$Sheet
+S 5350 6350 900  1300
+U 5C54653F
+F0 "Front" 50
+F1 "Front.sch" 50
+$EndSheet
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5C624F88
+P 8150 3750
+F 0 "#PWR0102" H 8150 3600 50  0001 C CNN
+F 1 "+3.3V" H 8000 3850 50  0000 C CNN
+F 2 "" H 8150 3750 50  0001 C CNN
+F 3 "" H 8150 3750 50  0001 C CNN
+	1    8150 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8500 3750 8150 3750
+Text HLabel 800  1450 3    50   Input ~ 0
+DoorA_MK
+Text HLabel 900  1450 3    50   Input ~ 0
+DoorB_MK
+Text HLabel 1000 1450 3    50   Input ~ 0
+DoorC_MK
+Text HLabel 1100 1450 3    50   Input ~ 0
+DoorD_MK
+$Comp
+L Device:R_Network04 RN?
+U 1 1 5C769116
+P 1000 1000
+F 0 "RN?" H 1180 1046 50  0000 L CNN
+F 1 "330R" H 1180 955 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 1275 1000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 1000 1000 50  0001 C CNN
+	1    1000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C769345
+P 800 650
+F 0 "#PWR?" H 800 500 50  0001 C CNN
+F 1 "+5V" H 700 750 50  0000 C CNN
+F 2 "" H 800 650 50  0001 C CNN
+F 3 "" H 800 650 50  0001 C CNN
+	1    800  650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  650  800  800 
+Wire Wire Line
+	800  1200 800  1450
+Wire Wire Line
+	900  1200 900  1450
+Wire Wire Line
+	1000 1200 1000 1450
+Wire Wire Line
+	1100 1200 1100 1450
+Text Notes 850  850  0    50   ~ 0
+Pull-up + Vorwiderstand LED
 $EndSCHEMATC
