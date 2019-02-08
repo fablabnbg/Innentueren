@@ -122,7 +122,7 @@ void disco(uint8_t effect) {
       pinMode(2, INPUT);                           // It is not a tone but a pause
     }
   } else {
-    if((effect>>7)==1){
+    if((effect>>6)==1){
       if(effect & 0x01){
         digitalWrite(3, LOW);}       // Blue LSB on
       else{
