@@ -46,7 +46,7 @@ int notes[]            = { 30000 ,
                            NOTE_C6, NOTE_CS6, NOTE_D6, NOTE_DS6, NOTE_E6, NOTE_F6,
                            30000 };
 
-uint8_t command[]      = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+uint8_t command[256]   = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -62,46 +62,49 @@ uint8_t command[]      = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
                            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-uint8_t commands       =   0;
-uint8_t wcommand       =   0;
-uint8_t rcommand       =   0;
+uint8_t commands       =   0;          // Count for commands in the command array. Equivelent to wcommand - rcommand
+uint8_t wcommand       =   0;          // Writeindex for command array. Automaticaly wraps at array end.
+uint8_t rcommand       =   0;          // Readindex for command array. Automaticaly wraps at array end.
 
-MFRC522 mfrc522(SS_PIN, RST_PIN);  // Create MFRC522 instance
-Tone    Player;                    // Create a Tone-Player instance
+MFRC522 mfrc522(SS_PIN, RST_PIN);      // Create MFRC522 instance
+Tone    Player;                        // Create a Tone-Player instance
 
 void setup() {
-	Serial.begin(9600);		// Initialize serial communications with the PC
-	while (!Serial);		// Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4)
-	SPI.begin();			// Init SPI bus
-	mfrc522.PCD_Init();		// Init MFRC522
+	Serial.begin(9600);		               // Initialize serial communications with the PC
+	while (!Serial);		                 // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4)
+	SPI.begin();			                   // Init SPI bus
+	mfrc522.PCD_Init();		               // Init MFRC522
   Serial.print("#");
-	mfrc522.PCD_DumpVersionToSerial();	// Show details of PCD - MFRC522 Card Reader details
-	Serial.println(F("#Scan PICC to see UID, SAK, type, and data blocks..."));
+	mfrc522.PCD_DumpVersionToSerial();   // Show details of PCD - MFRC522 Card Reader details
+	Serial.println(F("#Scan PICC to see SAK, UID and checksumm"));
   Player.begin(2);
-  digitalWrite(8, HIGH);
-  digitalWrite(7, HIGH);
-  digitalWrite(6, HIGH);
-  digitalWrite(5, HIGH);
-  digitalWrite(4, HIGH);
-  pinMode(8, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(3, OUTPUT);
-}
+  digitalWrite(8, HIGH);               // Red MSB off 
+  digitalWrite(7, HIGH);               // RED LSB off
+  digitalWrite(6, HIGH);               // Green MSB off
+  digitalWrite(5, HIGH);               // Green LSB off
+  digitalWrite(4, HIGH);               // Blue MSB off
+  digitalWrite(3, HIGH);               // Blue LSB off
+  pinMode(8, OUTPUT);                  // Red LED via 750 Ohm resistor
+  pinMode(7, OUTPUT);                  // Red LED via 1.3 kOhm resistor
+  pinMode(6, OUTPUT);                  // Green LED via 750 Ohm resistor
+  pinMode(5, OUTPUT);                  // Green LED via 1,3 kOhm resistor
+  pinMode(4, OUTPUT);                  // Blue LED via 750 Ohm resistor
+  pinMode(3, OUTPUT);                  // Blue LED via 1.3kOhm resistor
+}                                      // Common LED Anode goes to Vin = 5V
 
 
 void serialEvent() {
-  while (Serial.available()) {
-    // get the new byte:
-    char inChar = (char)Serial.read();
-    if (commands < 255) {
+  while (Serial.available()) {         // Is there another byte:
+    char inChar = (char)Serial.read(); // Get it
+    if (inChar == 0x00){               // Reset Code
+      asm volatile ("  jmp 0");        // Reset Reader ( May also reset in disco() )
+    }
+    if (commands < 254) {              // Is room for another command ?
       command[wcommand] = inChar;      // Place command int the command-buffer
       wcommand++;                      // Go to the Place in the buffer
       commands++;                      // There is 1 command more in the buffer
-      if (command[wcommand] != 0) {
-        asm volatile ("  jmp 0");      // There was no canary - we have to die
+      if (command[wcommand] != 0) {    // There was no canary - we have to die
+        asm volatile ("  jmp 0");      // Reset Reader. Ringbuffer is brocken
       }
     }
   }
@@ -111,20 +114,24 @@ void serialEvent() {
  * Routine to switch LEDs and make Noise
  */
 void disco(uint8_t effect) {
-  switch(effect){
-    case 0x00:
-      asm volatile ("  jmp 0");      // OH NO! I swallowed a canary, so i have to die
-      break;                         // Never reached becaue of an poor canary
-    case 0x40 ... 0x7F:
+  if((effect>>7)==1){
+    uint8_t noteindex = effect & 0x1F;             // Frequency
+    uint8_t duraindex = (effect & 0x60) / 32;      // ld(Duration)
+    Player.play(notes[noteindex],50 << duraindex);
+    if (noteindex == 0){
+      pinMode(2, INPUT);                           // It is not a tone but a pause
+    }
+  } else {
+    if((effect>>7)==1){
       if(effect & 0x01){
-        digitalWrite(3, LOW);}       // Red LSB on
+        digitalWrite(3, LOW);}       // Blue LSB on
       else{
-        digitalWrite(3, HIGH);       // Red LSB off
+        digitalWrite(3, HIGH);       // Blue LSB off
       }
       if(effect & 0x02){
-        digitalWrite(4, LOW);}       // Red MSB on
+        digitalWrite(4, LOW);}       // Blue MSB on
       else{
-        digitalWrite(4, HIGH);       // Red MSB off
+        digitalWrite(4, HIGH);       // Blue MSB off
       }
       if(effect & 0x04){
         digitalWrite(5, LOW);}       // Green LSB on
@@ -137,26 +144,24 @@ void disco(uint8_t effect) {
         digitalWrite(6, HIGH);       // Green MSB off
       }
       if(effect & 0x10){
-        digitalWrite(7, LOW);}       // Blue LSB on
+        digitalWrite(7, LOW);}       // Red LSB on
       else{
-        digitalWrite(7, HIGH);       // Blue LSB off
+        digitalWrite(7, HIGH);       // Red LSB off
       }
       if(effect & 0x20){
-        digitalWrite(8, LOW);}       // Blue MSB on
+        digitalWrite(8, LOW);}       // Red MSB on
       else{
-        digitalWrite(8, HIGH);       // Blue MSB off
+        digitalWrite(8, HIGH);       // Red MSB off
       }
-      break;
-    case 0x80 ... 0xFF:
-      uint8_t noteindex = effect & 0x1F;             // Frequency
-      uint8_t duraindex = (effect & 0x60) / 32;      // ld(Duration)
-      Player.play(notes[noteindex],50 << duraindex);
-      if (noteindex == 0){
-        pinMode(2, INPUT);                           // It is not a tone but a pause
+    } else {
+      switch(effect){
+        case 0x00:                       // OH NO! I swallowed a canary, so i have to die
+          asm volatile ("  jmp 0");      // Reset Reader. Ringbuffer is brocken
+        break;
+      default:
+        break;
       }
-      break;
-    default:
-      break;
+    }
   }
 }
 
@@ -173,15 +178,15 @@ void dump_byte_array(byte *buffer, byte bufferSize) {
 
 void loop() {
 	// Look for new cards
-	if ( ! mfrc522.PICC_IsNewCardPresent()){
-    if (! Player.isPlaying()){
-      if (commands > 0 ){
+	if ( ! mfrc522.PICC_IsNewCardPresent()){ // There is no NFC Card in proximity
+    if (! Player.isPlaying()){         // We dont play a tone
+      if (commands > 0 ){              // And we have something to Play
         disco(command[rcommand]);      // Make some noise and light
-        command[rcommand] = 0x00;      // Place a canary in the array
+        command[rcommand] = 0x00;      // Place a canary in the array so the writer knows the element is used
         rcommand++;                    // go to the next Place to read
         commands--;                    // Make room for new cammands as the last operation!
-      } else{
-        Player.stop();
+      } else{                          // There is nothing to play
+        Player.stop();                 // Stop the Player
       }
 	}
 		return;
