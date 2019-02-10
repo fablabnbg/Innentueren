@@ -89,19 +89,6 @@ Text HLabel 4250 3050 2    50   Input ~ 0
 DoorB_12V
 $Comp
 L Device:Q_NPN_CBE Q?
-U 1 1 5C5EA254
-P 2600 2000
-AR Path="/5C5EA254" Ref="Q?"  Part="1" 
-AR Path="/5C5BDAF5/5C5EA254" Ref="Q203"  Part="1" 
-F 0 "Q203" H 2791 2046 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 2791 1955 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 2800 2100 50  0001 C CNN
-F 3 "~" H 2600 2000 50  0001 C CNN
-	1    2600 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_CBE Q?
 U 1 1 5C5EA25B
 P 3200 1750
 AR Path="/5C5EA25B" Ref="Q?"  Part="1" 
@@ -112,32 +99,6 @@ F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 3400 1850 50  0001 C CNN
 F 3 "~" H 3200 1750 50  0001 C CNN
 	1    3200 1750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C5EA262
-P 2200 2000
-AR Path="/5C5EA262" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C5EA262" Ref="R203"  Part="1" 
-F 0 "R203" V 2100 2000 50  0000 C CNN
-F 1 "1k" V 2300 2000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2200 2000 50  0001 C CNN
-F 3 "~" H 2200 2000 50  0001 C CNN
-	1    2200 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C5EA269
-P 2700 1350
-AR Path="/5C5EA269" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C5EA269" Ref="R207"  Part="1" 
-F 0 "R207" V 2800 1350 50  0000 C CNN
-F 1 "100k" V 2600 1350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2700 1350 50  0001 C CNN
-F 3 "~" H 2700 1350 50  0001 C CNN
-	1    2700 1350
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
@@ -153,29 +114,7 @@ F 3 "~" H 3300 1350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3300 1150 3300 1200
-Wire Wire Line
 	3300 1550 3300 1500
-Wire Wire Line
-	3000 1750 2700 1750
-Wire Wire Line
-	2700 1750 2700 1800
-Wire Wire Line
-	2700 1450 2700 1750
-Connection ~ 2700 1750
-Wire Wire Line
-	2700 1250 2700 1200
-Wire Wire Line
-	2700 1200 3300 1200
-Connection ~ 3300 1200
-Wire Wire Line
-	3300 1200 3300 1250
-Wire Wire Line
-	1950 2000 2100 2000
-Wire Wire Line
-	2300 2000 2400 2000
-Wire Wire Line
-	2700 2200 2700 2450
 Wire Wire Line
 	3300 2450 3300 1950
 Wire Wire Line
@@ -329,19 +268,6 @@ F 3 "" H 3300 4150 50  0001 C CNN
 $EndComp
 $Comp
 L Device:Q_NPN_CBE Q?
-U 1 1 5C5F9E63
-P 2600 3850
-AR Path="/5C5F9E63" Ref="Q?"  Part="1" 
-AR Path="/5C5BDAF5/5C5F9E63" Ref="Q204"  Part="1" 
-F 0 "Q204" H 2791 3896 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 2791 3805 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 2800 3950 50  0001 C CNN
-F 3 "~" H 2600 3850 50  0001 C CNN
-	1    2600 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_CBE Q?
 U 1 1 5C5F9E69
 P 3200 3600
 AR Path="/5C5F9E69" Ref="Q?"  Part="1" 
@@ -356,28 +282,15 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5C5F9E6F
-P 2200 3850
+P 2750 3600
 AR Path="/5C5F9E6F" Ref="R?"  Part="1" 
 AR Path="/5C5BDAF5/5C5F9E6F" Ref="R204"  Part="1" 
-F 0 "R204" V 2100 3850 50  0000 C CNN
-F 1 "1k" V 2300 3850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2200 3850 50  0001 C CNN
-F 3 "~" H 2200 3850 50  0001 C CNN
-	1    2200 3850
+F 0 "R204" V 2650 3600 50  0000 C CNN
+F 1 "1k" V 2850 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2750 3600 50  0001 C CNN
+F 3 "~" H 2750 3600 50  0001 C CNN
+	1    2750 3600
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C5F9E75
-P 2700 3200
-AR Path="/5C5F9E75" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C5F9E75" Ref="R208"  Part="1" 
-F 0 "R208" V 2800 3200 50  0000 C CNN
-F 1 "100k" V 2600 3200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2700 3200 50  0001 C CNN
-F 3 "~" H 2700 3200 50  0001 C CNN
-	1    2700 3200
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
@@ -393,27 +306,7 @@ F 3 "~" H 3300 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3300 3000 3300 3050
-Wire Wire Line
 	3300 3400 3300 3350
-Wire Wire Line
-	3000 3600 2700 3600
-Wire Wire Line
-	2700 3600 2700 3650
-Wire Wire Line
-	2700 3300 2700 3600
-Connection ~ 2700 3600
-Wire Wire Line
-	2700 3100 2700 3050
-Wire Wire Line
-	2700 3050 3300 3050
-Connection ~ 3300 3050
-Wire Wire Line
-	3300 3050 3300 3100
-Wire Wire Line
-	1950 3850 2100 3850
-Wire Wire Line
-	2300 3850 2400 3850
 Wire Wire Line
 	3300 3350 3950 3350
 Connection ~ 3300 3350
@@ -422,239 +315,134 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR?
 U 1 1 5C5FAB91
-P 3200 4600
+P 3300 4600
 AR Path="/5C5FAB91" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FAB91" Ref="#PWR0206"  Part="1" 
-F 0 "#PWR0206" H 3200 4450 50  0001 C CNN
-F 1 "+12V" H 3215 4773 50  0000 C CNN
-F 2 "" H 3200 4600 50  0001 C CNN
-F 3 "" H 3200 4600 50  0001 C CNN
-	1    3200 4600
+F 0 "#PWR0206" H 3300 4450 50  0001 C CNN
+F 1 "+12V" H 3315 4773 50  0000 C CNN
+F 2 "" H 3300 4600 50  0001 C CNN
+F 3 "" H 3300 4600 50  0001 C CNN
+	1    3300 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C5FAB97
-P 3200 5800
+P 3300 5800
 AR Path="/5C5FAB97" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FAB97" Ref="#PWR0202"  Part="1" 
-F 0 "#PWR0202" H 3200 5550 50  0001 C CNN
-F 1 "GND" H 3205 5627 50  0000 C CNN
-F 2 "" H 3200 5800 50  0001 C CNN
-F 3 "" H 3200 5800 50  0001 C CNN
-	1    3200 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_CBE Q?
-U 1 1 5C5FAB9E
-P 2500 5450
-AR Path="/5C5FAB9E" Ref="Q?"  Part="1" 
-AR Path="/5C5BDAF5/5C5FAB9E" Ref="Q202"  Part="1" 
-F 0 "Q202" H 2691 5496 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 2691 5405 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 2700 5550 50  0001 C CNN
-F 3 "~" H 2500 5450 50  0001 C CNN
-	1    2500 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_CBE Q?
-U 1 1 5C5FABA4
-P 3100 5200
-AR Path="/5C5FABA4" Ref="Q?"  Part="1" 
-AR Path="/5C5BDAF5/5C5FABA4" Ref="Q206"  Part="1" 
-F 0 "Q206" H 3291 5246 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 3291 5155 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 3300 5300 50  0001 C CNN
-F 3 "~" H 3100 5200 50  0001 C CNN
-	1    3100 5200
+F 0 "#PWR0202" H 3300 5550 50  0001 C CNN
+F 1 "GND" H 3305 5627 50  0000 C CNN
+F 2 "" H 3300 5800 50  0001 C CNN
+F 3 "" H 3300 5800 50  0001 C CNN
+	1    3300 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5C5FABAA
-P 2100 5450
+P 2800 5200
 AR Path="/5C5FABAA" Ref="R?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FABAA" Ref="R202"  Part="1" 
-F 0 "R202" V 2000 5450 50  0000 C CNN
-F 1 "1k" V 2200 5450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2100 5450 50  0001 C CNN
-F 3 "~" H 2100 5450 50  0001 C CNN
-	1    2100 5450
+F 0 "R202" V 2700 5200 50  0000 C CNN
+F 1 "1k" V 2900 5200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2800 5200 50  0001 C CNN
+F 3 "~" H 2800 5200 50  0001 C CNN
+	1    2800 5200
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
-U 1 1 5C5FABB0
-P 2600 4800
-AR Path="/5C5FABB0" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C5FABB0" Ref="R206"  Part="1" 
-F 0 "R206" V 2700 4800 50  0000 C CNN
-F 1 "100k" V 2500 4800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2600 4800 50  0001 C CNN
-F 3 "~" H 2600 4800 50  0001 C CNN
-	1    2600 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5C5FABB6
-P 3200 4800
+P 3300 4800
 AR Path="/5C5FABB6" Ref="R?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FABB6" Ref="R210"  Part="1" 
-F 0 "R210" V 3300 4800 50  0000 C CNN
-F 1 "100k" V 3100 4800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3200 4800 50  0001 C CNN
-F 3 "~" H 3200 4800 50  0001 C CNN
-	1    3200 4800
+F 0 "R210" V 3400 4800 50  0000 C CNN
+F 1 "100k" V 3200 4800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3300 4800 50  0001 C CNN
+F 3 "~" H 3300 4800 50  0001 C CNN
+	1    3300 4800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3200 4600 3200 4650
+	3300 5000 3300 4950
+Connection ~ 3300 4950
 Wire Wire Line
-	3200 5000 3200 4950
-Wire Wire Line
-	2900 5200 2600 5200
-Wire Wire Line
-	2600 5200 2600 5250
-Wire Wire Line
-	2600 4900 2600 5200
-Connection ~ 2600 5200
-Wire Wire Line
-	2600 4700 2600 4650
-Wire Wire Line
-	2600 4650 3200 4650
-Connection ~ 3200 4650
-Wire Wire Line
-	3200 4650 3200 4700
-Wire Wire Line
-	1850 5450 2000 5450
-Wire Wire Line
-	2200 5450 2300 5450
-Connection ~ 3200 4950
-Wire Wire Line
-	3200 4950 3200 4900
+	3300 4950 3300 4900
 $Comp
 L power:+12V #PWR?
 U 1 1 5C5FC3E5
-P 3150 6250
+P 3300 6250
 AR Path="/5C5FC3E5" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FC3E5" Ref="#PWR0205"  Part="1" 
-F 0 "#PWR0205" H 3150 6100 50  0001 C CNN
-F 1 "+12V" H 3165 6423 50  0000 C CNN
-F 2 "" H 3150 6250 50  0001 C CNN
-F 3 "" H 3150 6250 50  0001 C CNN
-	1    3150 6250
+F 0 "#PWR0205" H 3300 6100 50  0001 C CNN
+F 1 "+12V" H 3315 6423 50  0000 C CNN
+F 2 "" H 3300 6250 50  0001 C CNN
+F 3 "" H 3300 6250 50  0001 C CNN
+	1    3300 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C5FC3EB
-P 3150 7650
+P 3300 7650
 AR Path="/5C5FC3EB" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FC3EB" Ref="#PWR0201"  Part="1" 
-F 0 "#PWR0201" H 3150 7400 50  0001 C CNN
-F 1 "GND" H 3155 7477 50  0000 C CNN
-F 2 "" H 3150 7650 50  0001 C CNN
-F 3 "" H 3150 7650 50  0001 C CNN
-	1    3150 7650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_CBE Q?
-U 1 1 5C5FC3F2
-P 2450 7100
-AR Path="/5C5FC3F2" Ref="Q?"  Part="1" 
-AR Path="/5C5BDAF5/5C5FC3F2" Ref="Q201"  Part="1" 
-F 0 "Q201" H 2641 7146 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 2641 7055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 2650 7200 50  0001 C CNN
-F 3 "~" H 2450 7100 50  0001 C CNN
-	1    2450 7100
+F 0 "#PWR0201" H 3300 7400 50  0001 C CNN
+F 1 "GND" H 3305 7477 50  0000 C CNN
+F 2 "" H 3300 7650 50  0001 C CNN
+F 3 "" H 3300 7650 50  0001 C CNN
+	1    3300 7650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_CBE Q?
 U 1 1 5C5FC3F8
-P 3050 6850
+P 3200 6850
 AR Path="/5C5FC3F8" Ref="Q?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FC3F8" Ref="Q205"  Part="1" 
-F 0 "Q205" H 3241 6896 50  0000 L CNN
-F 1 "Q_NPN_CBE" H 3241 6805 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 3250 6950 50  0001 C CNN
-F 3 "~" H 3050 6850 50  0001 C CNN
-	1    3050 6850
+F 0 "Q205" H 3391 6896 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 3391 6805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 3400 6950 50  0001 C CNN
+F 3 "~" H 3200 6850 50  0001 C CNN
+	1    3200 6850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5C5FC3FE
-P 2050 7100
+P 2800 6850
 AR Path="/5C5FC3FE" Ref="R?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FC3FE" Ref="R201"  Part="1" 
-F 0 "R201" V 1950 7100 50  0000 C CNN
-F 1 "1k" V 2150 7100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2050 7100 50  0001 C CNN
-F 3 "~" H 2050 7100 50  0001 C CNN
-	1    2050 7100
+F 0 "R201" V 2700 6850 50  0000 C CNN
+F 1 "1k" V 2900 6850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2800 6850 50  0001 C CNN
+F 3 "~" H 2800 6850 50  0001 C CNN
+	1    2800 6850
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
-U 1 1 5C5FC404
-P 2550 6450
-AR Path="/5C5FC404" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C5FC404" Ref="R205"  Part="1" 
-F 0 "R205" V 2650 6450 50  0000 C CNN
-F 1 "100k" V 2450 6450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2550 6450 50  0001 C CNN
-F 3 "~" H 2550 6450 50  0001 C CNN
-	1    2550 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5C5FC40A
-P 3150 6450
+P 3300 6450
 AR Path="/5C5FC40A" Ref="R?"  Part="1" 
 AR Path="/5C5BDAF5/5C5FC40A" Ref="R209"  Part="1" 
-F 0 "R209" V 3250 6450 50  0000 C CNN
-F 1 "100k" V 3050 6450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3150 6450 50  0001 C CNN
-F 3 "~" H 3150 6450 50  0001 C CNN
-	1    3150 6450
+F 0 "R209" V 3400 6450 50  0000 C CNN
+F 1 "100k" V 3200 6450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3300 6450 50  0001 C CNN
+F 3 "~" H 3300 6450 50  0001 C CNN
+	1    3300 6450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3150 6250 3150 6300
+	3300 6650 3300 6600
+Connection ~ 3300 6600
 Wire Wire Line
-	3150 6650 3150 6600
+	3300 6600 3300 6550
 Wire Wire Line
-	2850 6850 2550 6850
+	3300 6600 3950 6600
 Wire Wire Line
-	2550 6850 2550 6900
-Wire Wire Line
-	2550 6550 2550 6850
-Connection ~ 2550 6850
-Wire Wire Line
-	2550 6350 2550 6300
-Wire Wire Line
-	2550 6300 3150 6300
-Connection ~ 3150 6300
-Wire Wire Line
-	3150 6300 3150 6350
-Wire Wire Line
-	1800 7100 1950 7100
-Wire Wire Line
-	2150 7100 2250 7100
-Connection ~ 3150 6600
-Wire Wire Line
-	3150 6600 3150 6550
-Wire Wire Line
-	3150 6600 3950 6600
-Wire Wire Line
-	3200 4950 3950 4950
+	3300 4950 3950 4950
 Text HLabel 4350 2000 2    50   Output ~ 0
 DoorA_Lock
 Text HLabel 4350 3800 2    50   Output ~ 0
@@ -675,15 +463,15 @@ Wire Wire Line
 	4350 7050 4250 7050
 Wire Wire Line
 	4250 7050 4250 7150
-Text HLabel 2700 2450 3    50   Input ~ 0
+Text HLabel 2550 1750 0    50   Input ~ 0
 DoorA_In
-Text HLabel 2700 4150 3    50   Input ~ 0
+Text HLabel 2500 3600 0    50   Input ~ 0
 DoorB_In
-Text HLabel 2600 5800 3    50   Input ~ 0
+Text HLabel 2550 5200 0    50   Input ~ 0
 DoorC_In
-Text HLabel 2550 7350 3    50   Input ~ 0
+Text HLabel 2550 6850 0    50   Input ~ 0
 DoorD_In
-Text HLabel 5600 1100 0    50   Input ~ 0
+Text HLabel 5300 1100 0    50   Input ~ 0
 12V
 $Comp
 L power:GND #PWR?
@@ -705,105 +493,118 @@ Wire Wire Line
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C814B6A
-P 6050 1450
+P 5750 1450
 AR Path="/5C814B6A" Ref="F?"  Part="1" 
 AR Path="/5C5BDAF5/5C814B6A" Ref="F201"  Part="1" 
-F 0 "F201" H 5950 1500 50  0000 C CNN
-F 1 "1A" H 6200 1500 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 6050 1450 50  0001 C CNN
-F 3 "~" H 6050 1450 50  0001 C CNN
-	1    6050 1450
+F 0 "F201" H 5650 1500 50  0000 C CNN
+F 1 "1A" H 5900 1500 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 5750 1450 50  0001 C CNN
+F 3 "~" H 5750 1450 50  0001 C CNN
+	1    5750 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C814B71
-P 6050 1550
+P 5750 1550
 AR Path="/5C814B71" Ref="F?"  Part="1" 
 AR Path="/5C5BDAF5/5C814B71" Ref="F202"  Part="1" 
-F 0 "F202" H 5950 1600 50  0000 C CNN
-F 1 "1A" H 6200 1600 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 6050 1550 50  0001 C CNN
-F 3 "~" H 6050 1550 50  0001 C CNN
-	1    6050 1550
+F 0 "F202" H 5650 1600 50  0000 C CNN
+F 1 "1A" H 5900 1600 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 5750 1550 50  0001 C CNN
+F 3 "~" H 5750 1550 50  0001 C CNN
+	1    5750 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C814B78
-P 6050 1650
+P 5750 1650
 AR Path="/5C814B78" Ref="F?"  Part="1" 
 AR Path="/5C5BDAF5/5C814B78" Ref="F203"  Part="1" 
-F 0 "F203" H 5950 1700 50  0000 C CNN
-F 1 "1A" H 6200 1700 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 6050 1650 50  0001 C CNN
-F 3 "~" H 6050 1650 50  0001 C CNN
-	1    6050 1650
+F 0 "F203" H 5650 1700 50  0000 C CNN
+F 1 "1A" H 5900 1700 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 5750 1650 50  0001 C CNN
+F 3 "~" H 5750 1650 50  0001 C CNN
+	1    5750 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C814B7F
-P 6050 1750
+P 5750 1750
 AR Path="/5C814B7F" Ref="F?"  Part="1" 
 AR Path="/5C5BDAF5/5C814B7F" Ref="F204"  Part="1" 
-F 0 "F204" H 5950 1800 50  0000 C CNN
-F 1 "1A" H 6200 1800 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 6050 1750 50  0001 C CNN
-F 3 "~" H 6050 1750 50  0001 C CNN
-	1    6050 1750
+F 0 "F204" H 5650 1800 50  0000 C CNN
+F 1 "1A" H 5900 1800 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 5750 1750 50  0001 C CNN
+F 3 "~" H 5750 1750 50  0001 C CNN
+	1    5750 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 1450 5850 1450
+	5650 1450 5550 1450
 Wire Wire Line
-	5850 1450 5850 1550
+	5550 1450 5550 1550
 Wire Wire Line
-	5850 1750 5950 1750
+	5550 1750 5650 1750
 Wire Wire Line
-	5950 1650 5850 1650
-Connection ~ 5850 1650
+	5650 1650 5550 1650
+Connection ~ 5550 1650
 Wire Wire Line
-	5850 1650 5850 1750
+	5550 1650 5550 1750
 Wire Wire Line
-	5950 1550 5850 1550
-Connection ~ 5850 1550
+	5650 1550 5550 1550
+Connection ~ 5550 1550
 Wire Wire Line
-	5850 1550 5850 1650
+	5550 1550 5550 1650
 $Comp
 L power:+12V #PWR?
 U 1 1 5C814B8F
-P 5850 1050
+P 5550 1050
 AR Path="/5C814B8F" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C814B8F" Ref="#PWR0214"  Part="1" 
-F 0 "#PWR0214" H 5850 900 50  0001 C CNN
-F 1 "+12V" H 5865 1223 50  0000 C CNN
-F 2 "" H 5850 1050 50  0001 C CNN
-F 3 "" H 5850 1050 50  0001 C CNN
-	1    5850 1050
+F 0 "#PWR0214" H 5550 900 50  0001 C CNN
+F 1 "+12V" H 5565 1223 50  0000 C CNN
+F 2 "" H 5550 1050 50  0001 C CNN
+F 3 "" H 5550 1050 50  0001 C CNN
+	1    5550 1050
 	1    0    0    -1  
 $EndComp
-Connection ~ 5850 1450
-Text HLabel 7400 1450 2    50   Input ~ 0
+Connection ~ 5550 1450
+Text HLabel 7250 1450 2    50   Input ~ 0
 DoorA_12V
-Text HLabel 7400 1550 2    50   Input ~ 0
+Text HLabel 7250 1550 2    50   Input ~ 0
 DoorB_12V
-Text HLabel 7400 1650 2    50   Input ~ 0
+Text HLabel 7250 1650 2    50   Input ~ 0
 DoorC_12V
-Text HLabel 7400 1750 2    50   Input ~ 0
+Text HLabel 7250 1750 2    50   Input ~ 0
 DoorD_12V
 Wire Wire Line
-	6150 1450 6300 1450
+	5850 1450 6000 1450
 Wire Wire Line
-	6150 1550 6600 1550
+	5850 1550 6300 1550
 $Comp
 L Device:D_Small D?
 U 1 1 5C814B9C
-P 6300 1250
+P 6000 1250
 AR Path="/5C814B9C" Ref="D?"  Part="1" 
 AR Path="/5C5BDAF5/5C814B9C" Ref="D205"  Part="1" 
-F 0 "D205" V 6346 1182 50  0000 R CNN
-F 1 "1N4148" V 6200 1250 50  0000 R CNN
+F 0 "D205" V 6046 1182 50  0000 R CNN
+F 1 "1N4148" V 5900 1250 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 6000 1250 50  0001 C CNN
+F 3 "~" V 6000 1250 50  0001 C CNN
+	1    6000 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 5C814BA3
+P 6300 1250
+AR Path="/5C814BA3" Ref="D?"  Part="1" 
+AR Path="/5C5BDAF5/5C814BA3" Ref="D206"  Part="1" 
+F 0 "D206" V 6346 1182 50  0000 R CNN
+F 1 "1N4148" V 6150 1250 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 6300 1250 50  0001 C CNN
 F 3 "~" V 6300 1250 50  0001 C CNN
 	1    6300 1250
@@ -811,12 +612,12 @@ F 3 "~" V 6300 1250 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D?
-U 1 1 5C814BA3
+U 1 1 5C814BAA
 P 6600 1250
-AR Path="/5C814BA3" Ref="D?"  Part="1" 
-AR Path="/5C5BDAF5/5C814BA3" Ref="D206"  Part="1" 
-F 0 "D206" V 6646 1182 50  0000 R CNN
-F 1 "1N4148" V 6450 1250 50  0000 R CNN
+AR Path="/5C814BAA" Ref="D?"  Part="1" 
+AR Path="/5C5BDAF5/5C814BAA" Ref="D207"  Part="1" 
+F 0 "D207" V 6646 1182 50  0000 R CNN
+F 1 "1N4148" V 6500 1250 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 6600 1250 50  0001 C CNN
 F 3 "~" V 6600 1250 50  0001 C CNN
 	1    6600 1250
@@ -824,30 +625,19 @@ F 3 "~" V 6600 1250 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D?
-U 1 1 5C814BAA
+U 1 1 5C814BB1
 P 6900 1250
-AR Path="/5C814BAA" Ref="D?"  Part="1" 
-AR Path="/5C5BDAF5/5C814BAA" Ref="D207"  Part="1" 
-F 0 "D207" V 6946 1182 50  0000 R CNN
-F 1 "1N4148" V 6800 1250 50  0000 R CNN
+AR Path="/5C814BB1" Ref="D?"  Part="1" 
+AR Path="/5C5BDAF5/5C814BB1" Ref="D208"  Part="1" 
+F 0 "D208" V 6946 1182 50  0000 R CNN
+F 1 "1N4148" V 6750 1250 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 6900 1250 50  0001 C CNN
 F 3 "~" V 6900 1250 50  0001 C CNN
 	1    6900 1250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:D_Small D?
-U 1 1 5C814BB1
-P 7200 1250
-AR Path="/5C814BB1" Ref="D?"  Part="1" 
-AR Path="/5C5BDAF5/5C814BB1" Ref="D208"  Part="1" 
-F 0 "D208" V 7246 1182 50  0000 R CNN
-F 1 "1N4148" V 7050 1250 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 7200 1250 50  0001 C CNN
-F 3 "~" V 7200 1250 50  0001 C CNN
-	1    7200 1250
-	0    -1   -1   0   
-$EndComp
+Wire Wire Line
+	6000 1100 6000 1150
 Wire Wire Line
 	6300 1100 6300 1150
 Wire Wire Line
@@ -855,156 +645,77 @@ Wire Wire Line
 Wire Wire Line
 	6900 1100 6900 1150
 Wire Wire Line
-	7200 1100 7200 1150
+	6900 1350 6900 1750
+Connection ~ 6900 1750
 Wire Wire Line
-	7200 1350 7200 1750
-Connection ~ 7200 1750
+	6900 1750 7250 1750
 Wire Wire Line
-	7200 1750 7400 1750
+	6600 1350 6600 1650
 Wire Wire Line
-	6900 1350 6900 1650
+	6300 1350 6300 1550
 Wire Wire Line
-	6600 1350 6600 1550
+	6000 1350 6000 1450
 Wire Wire Line
-	6300 1350 6300 1450
-Wire Wire Line
-	5850 1050 5850 1100
+	5550 1050 5550 1100
 $Comp
 L Device:R_Small R?
 U 1 1 5C814BC3
-P 6050 1100
+P 5750 1100
 AR Path="/5C814BC3" Ref="R?"  Part="1" 
 AR Path="/5C5BDAF5/5C814BC3" Ref="R213"  Part="1" 
-F 0 "R213" V 5950 1100 50  0000 C CNN
-F 1 "1M" V 6150 1100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6050 1100 50  0001 C CNN
-F 3 "~" H 6050 1100 50  0001 C CNN
-	1    6050 1100
+F 0 "R213" V 5650 1100 50  0000 C CNN
+F 1 "1M" V 5850 1100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5750 1100 50  0001 C CNN
+F 3 "~" H 5750 1100 50  0001 C CNN
+	1    5750 1100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5950 1100 5850 1100
-Connection ~ 5850 1100
+	5650 1100 5550 1100
+Connection ~ 5550 1100
 Wire Wire Line
-	5850 1100 5850 1450
+	5550 1100 5550 1450
 Wire Wire Line
-	6150 1100 6300 1100
-Connection ~ 6300 1100
-$Comp
-L Device:R_Small R?
-U 1 1 5C814BCF
-P 6300 1950
-AR Path="/5C814BCF" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C814BCF" Ref="R214"  Part="1" 
-F 0 "R214" V 6200 1850 50  0000 C CNN
-F 1 "10k" V 6200 2050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6300 1950 50  0001 C CNN
-F 3 "~" H 6300 1950 50  0001 C CNN
-	1    6300 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C814BD6
-P 6600 1950
-AR Path="/5C814BD6" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C814BD6" Ref="R215"  Part="1" 
-F 0 "R215" V 6500 1850 50  0000 C CNN
-F 1 "10k" V 6500 2050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6600 1950 50  0001 C CNN
-F 3 "~" H 6600 1950 50  0001 C CNN
-	1    6600 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C814BDD
-P 6900 1950
-AR Path="/5C814BDD" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C814BDD" Ref="R216"  Part="1" 
-F 0 "R216" V 6800 1850 50  0000 C CNN
-F 1 "10k" V 6800 2050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 1950 50  0001 C CNN
-F 3 "~" H 6900 1950 50  0001 C CNN
-	1    6900 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C814BE4
-P 7200 1950
-AR Path="/5C814BE4" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C814BE4" Ref="R217"  Part="1" 
-F 0 "R217" V 7100 1850 50  0000 C CNN
-F 1 "10k" V 7100 2050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7200 1950 50  0001 C CNN
-F 3 "~" H 7200 1950 50  0001 C CNN
-	1    7200 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 1100 7200 1100
-Connection ~ 6900 1100
-Wire Wire Line
-	6300 1450 7400 1450
-Connection ~ 6300 1450
-Wire Wire Line
-	6600 1550 7400 1550
-Connection ~ 6600 1550
-Wire Wire Line
-	6900 1650 7400 1650
-Connection ~ 6900 1650
-Wire Wire Line
-	6150 1750 7200 1750
-Wire Wire Line
-	6150 1650 6900 1650
-Wire Wire Line
-	6300 1100 6600 1100
-Connection ~ 6600 1100
+	5850 1100 6000 1100
+Connection ~ 6000 1100
 Wire Wire Line
 	6600 1100 6900 1100
+Connection ~ 6600 1100
 Wire Wire Line
-	6300 1850 6300 1450
+	6000 1450 7250 1450
+Connection ~ 6000 1450
 Wire Wire Line
-	6600 1850 6600 1550
+	6300 1550 7250 1550
+Connection ~ 6300 1550
 Wire Wire Line
-	6900 1650 6900 1850
+	6600 1650 7250 1650
+Connection ~ 6600 1650
 Wire Wire Line
-	7200 1750 7200 1850
+	5850 1750 6900 1750
 Wire Wire Line
-	6300 2050 6300 2150
+	5850 1650 6600 1650
 Wire Wire Line
-	6300 2150 6600 2150
+	6000 1100 6300 1100
+Connection ~ 6300 1100
 Wire Wire Line
-	6600 2150 6600 2050
+	6300 1100 6600 1100
 Wire Wire Line
-	6600 2150 6750 2150
+	6000 1850 6000 1450
 Wire Wire Line
-	6900 2150 6900 2050
-Connection ~ 6600 2150
-Wire Wire Line
-	6900 2150 7200 2150
-Wire Wire Line
-	7200 2150 7200 2050
-Connection ~ 6900 2150
+	6900 1750 6900 1850
 $Comp
 L power:GND #PWR?
 U 1 1 5C814C06
-P 6750 2200
+P 6600 2450
 AR Path="/5C814C06" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C814C06" Ref="#PWR0215"  Part="1" 
-F 0 "#PWR0215" H 6750 1950 50  0001 C CNN
-F 1 "GND" H 6750 2050 50  0000 R CNN
-F 2 "" H 6750 2200 50  0001 C CNN
-F 3 "" H 6750 2200 50  0001 C CNN
-	1    6750 2200
+F 0 "#PWR0215" H 6600 2200 50  0001 C CNN
+F 1 "GND" H 6600 2300 50  0000 R CNN
+F 2 "" H 6600 2450 50  0001 C CNN
+F 3 "" H 6600 2450 50  0001 C CNN
+	1    6600 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6750 2200 6750 2150
-Connection ~ 6750 2150
-Wire Wire Line
-	6750 2150 6900 2150
 $Comp
 L power:+12V #PWR?
 U 1 1 5C814C0F
@@ -1031,9 +742,6 @@ F 3 "~" H 7900 1250 50  0001 C CNN
 	1    7900 1250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7200 2150 7900 2150
-Connection ~ 7200 2150
 $Comp
 L Device:Q_NPN_CBE Q?
 U 1 1 5C814C24
@@ -1050,87 +758,87 @@ $EndComp
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C54897A
-P 6050 3200
+P 5750 3200
 AR Path="/5C54897A" Ref="F?"  Part="1" 
 AR Path="/5C5BDAF5/5C54897A" Ref="F205"  Part="1" 
-F 0 "F205" H 5950 3250 50  0000 C CNN
-F 1 "0.5A" H 6200 3250 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 6050 3200 50  0001 C CNN
-F 3 "~" H 6050 3200 50  0001 C CNN
-	1    6050 3200
+F 0 "F205" H 5650 3250 50  0000 C CNN
+F 1 "0.5A" H 5900 3250 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 5750 3200 50  0001 C CNN
+F 3 "~" H 5750 3200 50  0001 C CNN
+	1    5750 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C548981
-P 6050 3300
+P 5750 3300
 AR Path="/5C548981" Ref="F?"  Part="1" 
 AR Path="/5C5BDAF5/5C548981" Ref="F206"  Part="1" 
-F 0 "F206" H 5950 3350 50  0000 C CNN
-F 1 "0.5A" H 6200 3350 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 6050 3300 50  0001 C CNN
-F 3 "~" H 6050 3300 50  0001 C CNN
-	1    6050 3300
+F 0 "F206" H 5650 3350 50  0000 C CNN
+F 1 "0.5A" H 5900 3350 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 5750 3300 50  0001 C CNN
+F 3 "~" H 5750 3300 50  0001 C CNN
+	1    5750 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C548988
-P 6050 3400
+P 5750 3400
 AR Path="/5C548988" Ref="F?"  Part="1" 
 AR Path="/5C5BDAF5/5C548988" Ref="F207"  Part="1" 
-F 0 "F207" H 5950 3450 50  0000 C CNN
-F 1 "0.5A" H 6200 3450 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 6050 3400 50  0001 C CNN
-F 3 "~" H 6050 3400 50  0001 C CNN
-	1    6050 3400
+F 0 "F207" H 5650 3450 50  0000 C CNN
+F 1 "0.5A" H 5900 3450 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 5750 3400 50  0001 C CNN
+F 3 "~" H 5750 3400 50  0001 C CNN
+	1    5750 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C54898F
-P 6050 3500
+P 5750 3500
 AR Path="/5C54898F" Ref="F?"  Part="1" 
 AR Path="/5C5BDAF5/5C54898F" Ref="F208"  Part="1" 
-F 0 "F208" H 5950 3550 50  0000 C CNN
-F 1 "0.5A" H 6200 3550 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 6050 3500 50  0001 C CNN
-F 3 "~" H 6050 3500 50  0001 C CNN
-	1    6050 3500
+F 0 "F208" H 5650 3550 50  0000 C CNN
+F 1 "0.5A" H 5900 3550 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 5750 3500 50  0001 C CNN
+F 3 "~" H 5750 3500 50  0001 C CNN
+	1    5750 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 3200 5850 3200
+	5650 3200 5550 3200
 Wire Wire Line
-	5850 3200 5850 3300
+	5550 3200 5550 3300
 Wire Wire Line
-	5850 3500 5950 3500
+	5550 3500 5650 3500
 Wire Wire Line
-	5950 3300 5850 3300
-Connection ~ 5850 3300
+	5650 3300 5550 3300
+Connection ~ 5550 3300
 Wire Wire Line
-	5850 3300 5850 3400
+	5550 3300 5550 3400
 Wire Wire Line
-	5950 3400 5850 3400
-Connection ~ 5850 3400
+	5650 3400 5550 3400
+Connection ~ 5550 3400
 Wire Wire Line
-	5850 3400 5850 3500
+	5550 3400 5550 3500
 $Comp
 L power:+5V #PWR?
 U 1 1 5C54899F
-P 5850 2750
+P 5550 2750
 AR Path="/5C54899F" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C54899F" Ref="#PWR0138"  Part="1" 
-F 0 "#PWR0138" H 5850 2600 50  0001 C CNN
-F 1 "+5V" H 5865 2923 50  0000 C CNN
-F 2 "" H 5850 2750 50  0001 C CNN
-F 3 "" H 5850 2750 50  0001 C CNN
-	1    5850 2750
+F 0 "#PWR0138" H 5550 2600 50  0001 C CNN
+F 1 "+5V" H 5565 2923 50  0000 C CNN
+F 2 "" H 5550 2750 50  0001 C CNN
+F 3 "" H 5550 2750 50  0001 C CNN
+	1    5550 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 2750 5850 2850
-Connection ~ 5850 3200
+	5550 2750 5550 2850
+Connection ~ 5550 3200
 Text HLabel 7400 3200 2    50   Input ~ 0
 DoorA_VCC
 Text HLabel 7400 3300 2    50   Input ~ 0
@@ -1142,11 +850,24 @@ DoorD_VCC
 $Comp
 L Device:D_Small D?
 U 1 1 5C598E38
-P 6300 3000
+P 6000 3000
 AR Path="/5C598E38" Ref="D?"  Part="1" 
 AR Path="/5C5BDAF5/5C598E38" Ref="D209"  Part="1" 
-F 0 "D209" V 6346 2932 50  0000 R CNN
-F 1 "1N4148" V 6200 3000 50  0000 R CNN
+F 0 "D209" V 6046 2932 50  0000 R CNN
+F 1 "1N4148" V 5900 3000 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 6000 3000 50  0001 C CNN
+F 3 "~" V 6000 3000 50  0001 C CNN
+	1    6000 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 5C598E3F
+P 6300 3000
+AR Path="/5C598E3F" Ref="D?"  Part="1" 
+AR Path="/5C5BDAF5/5C598E3F" Ref="D210"  Part="1" 
+F 0 "D210" V 6346 2932 50  0000 R CNN
+F 1 "1N4148" V 6150 3000 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 6300 3000 50  0001 C CNN
 F 3 "~" V 6300 3000 50  0001 C CNN
 	1    6300 3000
@@ -1154,12 +875,12 @@ F 3 "~" V 6300 3000 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D?
-U 1 1 5C598E3F
+U 1 1 5C598E46
 P 6600 3000
-AR Path="/5C598E3F" Ref="D?"  Part="1" 
-AR Path="/5C5BDAF5/5C598E3F" Ref="D210"  Part="1" 
-F 0 "D210" V 6646 2932 50  0000 R CNN
-F 1 "1N4148" V 6450 3000 50  0000 R CNN
+AR Path="/5C598E46" Ref="D?"  Part="1" 
+AR Path="/5C5BDAF5/5C598E46" Ref="D211"  Part="1" 
+F 0 "D211" V 6646 2932 50  0000 R CNN
+F 1 "1N4148" V 6500 3000 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 6600 3000 50  0001 C CNN
 F 3 "~" V 6600 3000 50  0001 C CNN
 	1    6600 3000
@@ -1167,30 +888,19 @@ F 3 "~" V 6600 3000 50  0001 C CNN
 $EndComp
 $Comp
 L Device:D_Small D?
-U 1 1 5C598E46
+U 1 1 5C598E4D
 P 6900 3000
-AR Path="/5C598E46" Ref="D?"  Part="1" 
-AR Path="/5C5BDAF5/5C598E46" Ref="D211"  Part="1" 
-F 0 "D211" V 6946 2932 50  0000 R CNN
-F 1 "1N4148" V 6800 3000 50  0000 R CNN
+AR Path="/5C598E4D" Ref="D?"  Part="1" 
+AR Path="/5C5BDAF5/5C598E4D" Ref="D212"  Part="1" 
+F 0 "D212" V 6946 2932 50  0000 R CNN
+F 1 "1N4148" V 6750 3000 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 6900 3000 50  0001 C CNN
 F 3 "~" V 6900 3000 50  0001 C CNN
 	1    6900 3000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:D_Small D?
-U 1 1 5C598E4D
-P 7200 3000
-AR Path="/5C598E4D" Ref="D?"  Part="1" 
-AR Path="/5C5BDAF5/5C598E4D" Ref="D212"  Part="1" 
-F 0 "D212" V 7246 2932 50  0000 R CNN
-F 1 "1N4148" V 7050 3000 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 7200 3000 50  0001 C CNN
-F 3 "~" V 7200 3000 50  0001 C CNN
-	1    7200 3000
-	0    -1   -1   0   
-$EndComp
+Wire Wire Line
+	6000 2850 6000 2900
 Wire Wire Line
 	6300 2850 6300 2900
 Wire Wire Line
@@ -1198,161 +908,77 @@ Wire Wire Line
 Wire Wire Line
 	6900 2850 6900 2900
 Wire Wire Line
-	7200 2850 7200 2900
+	6900 3100 6900 3500
+Connection ~ 6900 3500
 Wire Wire Line
-	7200 3100 7200 3500
-Connection ~ 7200 3500
+	6900 3500 7400 3500
 Wire Wire Line
-	7200 3500 7400 3500
+	6600 3100 6600 3400
 Wire Wire Line
-	6900 3100 6900 3400
+	6300 3100 6300 3300
 Wire Wire Line
-	6600 3100 6600 3300
-Wire Wire Line
-	6300 3100 6300 3200
-Connection ~ 6300 2850
-$Comp
-L Device:R_Small R?
-U 1 1 5C598E60
-P 6300 3700
-AR Path="/5C598E60" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C598E60" Ref="R220"  Part="1" 
-F 0 "R220" V 6200 3600 50  0000 C CNN
-F 1 "10k" V 6200 3800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6300 3700 50  0001 C CNN
-F 3 "~" H 6300 3700 50  0001 C CNN
-	1    6300 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C598E67
-P 6600 3700
-AR Path="/5C598E67" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C598E67" Ref="R221"  Part="1" 
-F 0 "R221" V 6500 3600 50  0000 C CNN
-F 1 "10k" V 6500 3800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6600 3700 50  0001 C CNN
-F 3 "~" H 6600 3700 50  0001 C CNN
-	1    6600 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C598E6E
-P 6900 3700
-AR Path="/5C598E6E" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C598E6E" Ref="R222"  Part="1" 
-F 0 "R222" V 6800 3600 50  0000 C CNN
-F 1 "10k" V 6800 3800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 3700 50  0001 C CNN
-F 3 "~" H 6900 3700 50  0001 C CNN
-	1    6900 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C598E75
-P 7200 3700
-AR Path="/5C598E75" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C598E75" Ref="R223"  Part="1" 
-F 0 "R223" V 7100 3600 50  0000 C CNN
-F 1 "10k" V 7100 3800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7200 3700 50  0001 C CNN
-F 3 "~" H 7200 3700 50  0001 C CNN
-	1    7200 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 2850 7200 2850
-Connection ~ 6900 2850
-Wire Wire Line
-	6300 3200 7400 3200
-Connection ~ 6300 3200
-Wire Wire Line
-	6600 3300 7400 3300
-Connection ~ 6600 3300
-Wire Wire Line
-	6900 3400 7400 3400
-Connection ~ 6900 3400
-Wire Wire Line
-	6300 2850 6600 2850
-Connection ~ 6600 2850
+	6000 3100 6000 3200
+Connection ~ 6000 2850
 Wire Wire Line
 	6600 2850 6900 2850
+Connection ~ 6600 2850
 Wire Wire Line
-	6300 3600 6300 3200
+	6000 3200 7400 3200
+Connection ~ 6000 3200
 Wire Wire Line
-	6600 3600 6600 3300
+	6300 3300 7400 3300
+Connection ~ 6300 3300
 Wire Wire Line
-	6900 3400 6900 3600
+	6600 3400 7400 3400
+Connection ~ 6600 3400
 Wire Wire Line
-	7200 3500 7200 3600
+	6000 2850 6300 2850
+Connection ~ 6300 2850
 Wire Wire Line
-	6300 3800 6300 3900
-Wire Wire Line
-	6300 3900 6600 3900
-Wire Wire Line
-	6600 3900 6600 3800
-Wire Wire Line
-	6600 3900 6750 3900
-Wire Wire Line
-	6900 3900 6900 3800
-Connection ~ 6600 3900
-Wire Wire Line
-	6900 3900 7200 3900
-Wire Wire Line
-	7200 3900 7200 3800
-Connection ~ 6900 3900
+	6300 2850 6600 2850
 $Comp
 L power:GND #PWR?
 U 1 1 5C598E97
-P 6750 3950
+P 6600 4150
 AR Path="/5C598E97" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C598E97" Ref="#PWR0139"  Part="1" 
-F 0 "#PWR0139" H 6750 3700 50  0001 C CNN
-F 1 "GND" H 6750 3800 50  0000 R CNN
-F 2 "" H 6750 3950 50  0001 C CNN
-F 3 "" H 6750 3950 50  0001 C CNN
-	1    6750 3950
+F 0 "#PWR0139" H 6600 3900 50  0001 C CNN
+F 1 "GND" H 6600 4000 50  0000 R CNN
+F 2 "" H 6600 4150 50  0001 C CNN
+F 3 "" H 6600 4150 50  0001 C CNN
+	1    6600 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 3950 6750 3900
-Connection ~ 6750 3900
-Wire Wire Line
-	6750 3900 6900 3900
-Wire Wire Line
-	7200 3900 7900 3900
-Connection ~ 7200 3900
+	6600 4150 6600 4100
 $Comp
 L Device:R_Small R?
 U 1 1 5C5A0CED
-P 6050 2850
+P 5750 2850
 AR Path="/5C5A0CED" Ref="R?"  Part="1" 
 AR Path="/5C5BDAF5/5C5A0CED" Ref="R219"  Part="1" 
-F 0 "R219" V 5950 2850 50  0000 C CNN
-F 1 "1M" V 6150 2850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6050 2850 50  0001 C CNN
-F 3 "~" H 6050 2850 50  0001 C CNN
-	1    6050 2850
+F 0 "R219" V 5650 2850 50  0000 C CNN
+F 1 "1M" V 5850 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5750 2850 50  0001 C CNN
+F 3 "~" H 5750 2850 50  0001 C CNN
+	1    5750 2850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5950 2850 5850 2850
-Connection ~ 5850 2850
+	5650 2850 5550 2850
+Connection ~ 5550 2850
 Wire Wire Line
-	5850 2850 5850 3200
+	5550 2850 5550 3200
 Wire Wire Line
-	6150 3200 6300 3200
+	5850 3200 6000 3200
 Wire Wire Line
-	6150 3300 6600 3300
+	5850 3300 6300 3300
 Wire Wire Line
-	6150 3400 6900 3400
+	5850 3400 6600 3400
 Wire Wire Line
-	6150 3500 7200 3500
+	5850 3500 6900 3500
 Wire Wire Line
-	6150 2850 6300 2850
+	5850 2850 6000 2850
 $Comp
 L Device:R_Small R?
 U 1 1 5C5D07FB
@@ -1396,28 +1022,12 @@ Wire Wire Line
 	7900 2600 7900 2850
 Wire Wire Line
 	7900 3050 7900 3200
-Wire Wire Line
-	7600 3650 7350 3650
-Wire Wire Line
-	7350 3650 7350 2850
-Wire Wire Line
-	7350 2850 7200 2850
-Connection ~ 7200 2850
-Wire Wire Line
-	7900 3850 7900 3900
+Connection ~ 6900 2850
 Wire Wire Line
 	7900 1350 7900 1550
 Wire Wire Line
 	7900 1000 7900 1150
-Wire Wire Line
-	7900 2100 7900 2150
-Wire Wire Line
-	7600 1900 7350 1900
-Wire Wire Line
-	7350 1900 7350 1100
-Wire Wire Line
-	7350 1100 7200 1100
-Connection ~ 7200 1100
+Connection ~ 6900 1100
 $Comp
 L Device:Q_NPN_CBE Q?
 U 1 1 5C56CE7E
@@ -1530,12 +1140,12 @@ Fuse_Error
 Wire Wire Line
 	9350 2100 9250 2100
 Connection ~ 9250 2100
-Text HLabel 5600 2850 0    50   Input ~ 0
+Text HLabel 5300 2850 0    50   Input ~ 0
 5V
 Wire Wire Line
-	5850 2850 5600 2850
+	5550 2850 5300 2850
 Wire Wire Line
-	5600 1100 5850 1100
+	5300 1100 5550 1100
 Text HLabel 10100 4400 0    50   Input ~ 0
 DA_Tx
 Text HLabel 10100 4500 0    50   Input ~ 0
@@ -1757,24 +1367,184 @@ F 3 "" H 3300 2450 50  0001 C CNN
 	1    3300 2450
 	1    0    0    -1  
 $EndComp
-Text HLabel 1950 2000 0    50   Input ~ 0
-3V3
 Wire Wire Line
-	3150 7050 3150 7650
+	3300 7050 3300 7650
 Wire Wire Line
 	3300 3800 3300 4150
 Wire Wire Line
-	3200 5400 3200 5800
+	3300 5400 3300 5800
+$Comp
+L Device:D_Small D?
+U 1 1 5C5C5BF9
+P 7400 1900
+AR Path="/5C5C5BF9" Ref="D?"  Part="1" 
+AR Path="/5C5BDAF5/5C5C5BF9" Ref="D214"  Part="1" 
+F 0 "D214" V 7446 1832 50  0000 R CNN
+F 1 "1N4148" V 7250 1900 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 7400 1900 50  0001 C CNN
+F 3 "~" V 7400 1900 50  0001 C CNN
+	1    7400 1900
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	2550 7300 2550 7350
+	7600 1900 7500 1900
+$Comp
+L Device:D_Small D?
+U 1 1 5C5D1F3B
+P 7300 3650
+AR Path="/5C5D1F3B" Ref="D?"  Part="1" 
+AR Path="/5C5BDAF5/5C5D1F3B" Ref="D213"  Part="1" 
+F 0 "D213" V 7346 3582 50  0000 R CNN
+F 1 "1N4148" V 7150 3650 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" V 7300 3650 50  0001 C CNN
+F 3 "~" V 7300 3650 50  0001 C CNN
+	1    7300 3650
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	2600 5800 2600 5650
+	7600 3650 7400 3650
 Wire Wire Line
-	2700 4050 2700 4150
-Text HLabel 1950 3850 0    50   Input ~ 0
-3V3
-Text HLabel 1850 5450 0    50   Input ~ 0
-3V3
-Text HLabel 1800 7100 0    50   Input ~ 0
-3V3
+	7200 3650 7100 3650
+Wire Wire Line
+	7100 3650 7100 2850
+Wire Wire Line
+	6900 2850 7100 2850
+Wire Wire Line
+	7300 1900 7100 1900
+Wire Wire Line
+	7100 1900 7100 1100
+Wire Wire Line
+	7100 1100 6900 1100
+Wire Wire Line
+	3300 1150 3300 1250
+$Comp
+L Device:R_Small R?
+U 1 1 5C5EA262
+P 2800 1750
+AR Path="/5C5EA262" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5C5EA262" Ref="R203"  Part="1" 
+F 0 "R203" V 2700 1750 50  0000 C CNN
+F 1 "1k" V 2900 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2800 1750 50  0001 C CNN
+F 3 "~" H 2800 1750 50  0001 C CNN
+	1    2800 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 1750 2900 1750
+Wire Wire Line
+	2700 1750 2550 1750
+Wire Wire Line
+	3300 6250 3300 6350
+$Comp
+L Device:Q_NPN_CBE Q?
+U 1 1 5C5FABA4
+P 3200 5200
+AR Path="/5C5FABA4" Ref="Q?"  Part="1" 
+AR Path="/5C5BDAF5/5C5FABA4" Ref="Q206"  Part="1" 
+F 0 "Q206" H 3391 5246 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 3391 5155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 3400 5300 50  0001 C CNN
+F 3 "~" H 3200 5200 50  0001 C CNN
+	1    3200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4600 3300 4700
+Wire Wire Line
+	3300 3000 3300 3100
+Wire Wire Line
+	3000 6850 2900 6850
+Wire Wire Line
+	2550 6850 2700 6850
+Wire Wire Line
+	3000 5200 2900 5200
+Wire Wire Line
+	2700 5200 2550 5200
+Wire Wire Line
+	3000 3600 2850 3600
+Wire Wire Line
+	2500 3600 2650 3600
+$Comp
+L Device:R_Network04 RN201
+U 1 1 5C70848E
+P 6400 2100
+F 0 "RN201" H 6120 2054 50  0000 R CNN
+F 1 "4x10k" H 6120 2145 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 6675 2100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6400 2100 50  0001 C CNN
+	1    6400 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 2450 6600 2350
+Wire Wire Line
+	6900 1850 6600 1850
+Wire Wire Line
+	6600 1850 6600 1900
+Wire Wire Line
+	6600 1650 6600 1800
+Wire Wire Line
+	6600 1800 6500 1800
+Wire Wire Line
+	6500 1800 6500 1900
+Wire Wire Line
+	6300 1550 6300 1800
+Wire Wire Line
+	6300 1800 6400 1800
+Wire Wire Line
+	6400 1800 6400 1900
+Wire Wire Line
+	6300 1900 6300 1850
+Wire Wire Line
+	6300 1850 6000 1850
+$Comp
+L Device:R_Network04 RN202
+U 1 1 5C742CAD
+P 6400 3850
+F 0 "RN202" H 6120 3804 50  0000 R CNN
+F 1 "4x10k" H 6120 3895 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 6675 3850 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6400 3850 50  0001 C CNN
+	1    6400 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 2350 6600 2350
+Wire Wire Line
+	7900 2100 7900 2350
+Connection ~ 6600 2350
+Wire Wire Line
+	6600 2350 6600 2300
+Wire Wire Line
+	7900 4100 6600 4100
+Wire Wire Line
+	6600 4100 6600 4050
+Wire Wire Line
+	7900 3850 7900 4100
+Connection ~ 6600 4100
+Wire Wire Line
+	6600 3400 6600 3550
+Wire Wire Line
+	6600 3550 6500 3550
+Wire Wire Line
+	6500 3550 6500 3650
+Wire Wire Line
+	6300 3300 6300 3550
+Wire Wire Line
+	6300 3550 6400 3550
+Wire Wire Line
+	6400 3550 6400 3650
+Wire Wire Line
+	6900 3500 6900 3600
+Wire Wire Line
+	6900 3600 6600 3600
+Wire Wire Line
+	6600 3600 6600 3650
+Wire Wire Line
+	6000 3200 6000 3600
+Wire Wire Line
+	6000 3600 6300 3600
+Wire Wire Line
+	6300 3600 6300 3650
 $EndSCHEMATC

@@ -1527,21 +1527,21 @@ DoorC_MK
 Text HLabel 1100 1450 3    50   Input ~ 0
 DoorD_MK
 $Comp
-L Device:R_Network04 RN?
+L Device:R_Network04 RN101
 U 1 1 5C769116
 P 1000 1000
-F 0 "RN?" H 1180 1046 50  0000 L CNN
-F 1 "330R" H 1180 955 50  0000 L CNN
+F 0 "RN101" H 1180 1046 50  0000 L CNN
+F 1 "2k7" H 1180 955 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP5" V 1275 1000 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 1000 1000 50  0001 C CNN
 	1    1000 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0111
 U 1 1 5C769345
 P 800 650
-F 0 "#PWR?" H 800 500 50  0001 C CNN
+F 0 "#PWR0111" H 800 500 50  0001 C CNN
 F 1 "+5V" H 700 750 50  0000 C CNN
 F 2 "" H 800 650 50  0001 C CNN
 F 3 "" H 800 650 50  0001 C CNN
@@ -1560,4 +1560,48 @@ Wire Wire Line
 	1100 1200 1100 1450
 Text Notes 850  850  0    50   ~ 0
 Pull-up + Vorwiderstand LED
+Wire Wire Line
+	7100 2200 6950 2200
+Wire Wire Line
+	7100 3100 6950 3100
+Wire Wire Line
+	7100 4000 6950 4000
+Wire Wire Line
+	7100 4900 6950 4900
+Text HLabel 7100 2200 2    50   Input ~ 0
+DoorA_MK
+Text HLabel 7100 3100 2    50   Input ~ 0
+DoorB_MK
+Text HLabel 7100 4000 2    50   Input ~ 0
+DoorC_MK
+Text HLabel 7100 4900 2    50   Input ~ 0
+DoorD_MK
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C607DE2
+P 6250 1500
+F 0 "#PWR?" H 6250 1350 50  0001 C CNN
+F 1 "+3.3V" H 6100 1600 50  0000 C CNN
+F 2 "" H 6250 1500 50  0001 C CNN
+F 3 "" H 6250 1500 50  0001 C CNN
+	1    6250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1500 6250 1550
+Connection ~ 6250 1550
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5C618DD8
+P 4300 1400
+F 0 "#PWR?" H 4300 1250 50  0001 C CNN
+F 1 "+1V8" H 4315 1573 50  0000 C CNN
+F 2 "" H 4300 1400 50  0001 C CNN
+F 3 "" H 4300 1400 50  0001 C CNN
+	1    4300 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1400 4300 1450
+Connection ~ 4300 1450
 $EndSCHEMATC
