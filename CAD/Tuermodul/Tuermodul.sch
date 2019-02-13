@@ -364,96 +364,72 @@ Wire Wire Line
 Wire Wire Line
 	2050 3200 2150 3200
 Wire Wire Line
-	2050 3300 2150 3300
+	2050 3500 2500 3500
 Wire Wire Line
-	2050 3400 2150 3400
+	2050 3700 2500 3700
 Wire Wire Line
-	2050 3500 2150 3500
+	2050 4000 2500 4000
 Wire Wire Line
-	2050 3600 2150 3600
-Wire Wire Line
-	2050 3700 2150 3700
-Wire Wire Line
-	2050 3800 2150 3800
-Wire Wire Line
-	2050 3900 2150 3900
-Wire Wire Line
-	2050 4000 2150 4000
-Wire Wire Line
-	2050 4100 2150 4100
-Wire Wire Line
-	2050 4200 2150 4200
+	2050 4200 2500 4200
 Wire Wire Line
 	1550 3100 1450 3100
 Wire Wire Line
 	1550 3200 1450 3200
 Wire Wire Line
-	1450 3300 1550 3300
+	1100 3500 1550 3500
 Wire Wire Line
-	1450 3400 1550 3400
+	1100 3700 1550 3700
 Wire Wire Line
-	1450 3500 1550 3500
+	1100 4000 1550 4000
 Wire Wire Line
-	1450 3600 1550 3600
-Wire Wire Line
-	1450 3700 1550 3700
-Wire Wire Line
-	1450 3800 1550 3800
-Wire Wire Line
-	1450 3900 1550 3900
-Wire Wire Line
-	1450 4000 1550 4000
-Wire Wire Line
-	1450 4100 1550 4100
-Wire Wire Line
-	1450 4200 1550 4200
+	1100 4200 1550 4200
 Text HLabel 2150 3100 2    50   Input ~ 0
 D-
 Text HLabel 2150 3200 2    50   Input ~ 0
 UID
-Text HLabel 2150 3300 2    50   Input ~ 0
+Text HLabel 2500 3300 2    50   Input ~ 0
 DoorC_TX_DTE
-Text HLabel 2150 3400 2    50   Input ~ 0
+Text HLabel 2500 3400 2    50   Input ~ 0
 DoorC_RX_DTE
-Text HLabel 2150 3500 2    50   Input ~ 0
+Text HLabel 2500 3500 2    50   Input ~ 0
 DoorC_VCC
-Text HLabel 2150 3600 2    50   Input ~ 0
+Text HLabel 2500 3600 2    50   Input ~ 0
 DoorC_MK
-Text HLabel 2150 3700 2    50   Input ~ 0
+Text HLabel 2500 3700 2    50   Input ~ 0
 DoorC_Lock
-Text HLabel 2150 3800 2    50   Input ~ 0
+Text HLabel 2500 3800 2    50   Input ~ 0
 DoorD_TX_DTE
-Text HLabel 2150 3900 2    50   Input ~ 0
+Text HLabel 2500 3900 2    50   Input ~ 0
 DoorD_RX_DTE
-Text HLabel 2150 4000 2    50   Input ~ 0
+Text HLabel 2500 4000 2    50   Input ~ 0
 DoorD_VCC
-Text HLabel 2150 4100 2    50   Input ~ 0
+Text HLabel 2500 4100 2    50   Input ~ 0
 DoorD_MK
-Text HLabel 2150 4200 2    50   Input ~ 0
+Text HLabel 2500 4200 2    50   Input ~ 0
 DoorD_Lock
 Text HLabel 1450 3100 0    50   Input ~ 0
 D+
 Text HLabel 1450 3200 0    50   Input ~ 0
 Error
-Text HLabel 1450 3300 0    50   Input ~ 0
+Text HLabel 1100 3300 0    50   Input ~ 0
 DoorA_TX_DTE
-Text HLabel 1450 3400 0    50   Input ~ 0
+Text HLabel 1100 3400 0    50   Input ~ 0
 DoorA_RX_DTE
-Text HLabel 1450 3500 0    50   Input ~ 0
+Text HLabel 1100 3500 0    50   Input ~ 0
 DoorA_VCC
-Text HLabel 1450 3600 0    50   Input ~ 0
+Text HLabel 1100 3600 0    50   Input ~ 0
 DoorA_MK
-Text HLabel 1450 3700 0    50   Input ~ 0
+Text HLabel 1100 3700 0    50   Input ~ 0
 DoorA_Lock
-Text HLabel 1450 3800 0    50   Input ~ 0
+Text HLabel 1100 3800 0    50   Input ~ 0
 DoorB_TX_DTE
-Text HLabel 1450 3900 0    50   Input ~ 0
+Text HLabel 1100 3900 0    50   Input ~ 0
 DoorB_RX_DTE
-Text HLabel 1450 4000 0    50   Input ~ 0
+Text HLabel 1100 4000 0    50   Input ~ 0
 DoorB_VCC
-Text HLabel 1450 4100 0    50   Input ~ 0
+Text HLabel 1100 4100 0    50   Input ~ 0
 DoorB_MK
-Text HLabel 1450 4200 0    50   Input ~ 0
+Text HLabel 1100 4200 0    50   Input ~ 0
 DoorB_Lock
 Wire Wire Line
 	7100 1900 6950 1900
@@ -1577,10 +1553,10 @@ DoorC_MK
 Text HLabel 7100 4900 2    50   Input ~ 0
 DoorD_MK
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0142
 U 1 1 5C607DE2
 P 6250 1500
-F 0 "#PWR?" H 6250 1350 50  0001 C CNN
+F 0 "#PWR0142" H 6250 1350 50  0001 C CNN
 F 1 "+3.3V" H 6100 1600 50  0000 C CNN
 F 2 "" H 6250 1500 50  0001 C CNN
 F 3 "" H 6250 1500 50  0001 C CNN
@@ -1591,10 +1567,10 @@ Wire Wire Line
 	6250 1500 6250 1550
 Connection ~ 6250 1550
 $Comp
-L power:+1V8 #PWR?
+L power:+1V8 #PWR0141
 U 1 1 5C618DD8
 P 4300 1400
-F 0 "#PWR?" H 4300 1250 50  0001 C CNN
+F 0 "#PWR0141" H 4300 1250 50  0001 C CNN
 F 1 "+1V8" H 4315 1573 50  0000 C CNN
 F 2 "" H 4300 1400 50  0001 C CNN
 F 3 "" H 4300 1400 50  0001 C CNN
@@ -1604,4 +1580,184 @@ $EndComp
 Wire Wire Line
 	4300 1400 4300 1450
 Connection ~ 4300 1450
+$Comp
+L Device:R_Small R104
+U 1 1 5C64485A
+P 1300 3300
+F 0 "R104" V 1250 3400 50  0000 L CNN
+F 1 "33R" V 1250 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1300 3300 50  0001 C CNN
+F 3 "~" H 1300 3300 50  0001 C CNN
+	1    1300 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R105
+U 1 1 5C645210
+P 1300 3400
+F 0 "R105" V 1250 3500 50  0000 L CNN
+F 1 "33R" V 1250 3150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1300 3400 50  0001 C CNN
+F 3 "~" H 1300 3400 50  0001 C CNN
+	1    1300 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R106
+U 1 1 5C645266
+P 1300 3600
+F 0 "R106" V 1250 3700 50  0000 L CNN
+F 1 "33R" V 1250 3350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1300 3600 50  0001 C CNN
+F 3 "~" H 1300 3600 50  0001 C CNN
+	1    1300 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R107
+U 1 1 5C6452C6
+P 1300 3800
+F 0 "R107" V 1250 3900 50  0000 L CNN
+F 1 "33R" V 1250 3550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1300 3800 50  0001 C CNN
+F 3 "~" H 1300 3800 50  0001 C CNN
+	1    1300 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R108
+U 1 1 5C645324
+P 1300 3900
+F 0 "R108" V 1250 4000 50  0000 L CNN
+F 1 "33R" V 1250 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1300 3900 50  0001 C CNN
+F 3 "~" H 1300 3900 50  0001 C CNN
+	1    1300 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R109
+U 1 1 5C645418
+P 1300 4100
+F 0 "R109" V 1250 4200 50  0000 L CNN
+F 1 "33R" V 1250 3850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1300 4100 50  0001 C CNN
+F 3 "~" H 1300 4100 50  0001 C CNN
+	1    1300 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R118
+U 1 1 5C64547A
+P 2300 4100
+F 0 "R118" V 2250 4150 50  0000 L CNN
+F 1 "33R" V 2250 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 4100 50  0001 C CNN
+F 3 "~" H 2300 4100 50  0001 C CNN
+	1    2300 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R114
+U 1 1 5C6454F4
+P 2300 3900
+F 0 "R114" V 2250 3950 50  0000 L CNN
+F 1 "33R" V 2250 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 3900 50  0001 C CNN
+F 3 "~" H 2300 3900 50  0001 C CNN
+	1    2300 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R113
+U 1 1 5C64555E
+P 2300 3800
+F 0 "R113" V 2250 3850 50  0000 L CNN
+F 1 "33R" V 2250 3600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 3800 50  0001 C CNN
+F 3 "~" H 2300 3800 50  0001 C CNN
+	1    2300 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R112
+U 1 1 5C6455CA
+P 2300 3600
+F 0 "R112" V 2250 3650 50  0000 L CNN
+F 1 "33R" V 2250 3400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 3600 50  0001 C CNN
+F 3 "~" H 2300 3600 50  0001 C CNN
+	1    2300 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R111
+U 1 1 5C645634
+P 2300 3400
+F 0 "R111" V 2250 3450 50  0000 L CNN
+F 1 "33R" V 2250 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 3400 50  0001 C CNN
+F 3 "~" H 2300 3400 50  0001 C CNN
+	1    2300 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R110
+U 1 1 5C6456A0
+P 2300 3300
+F 0 "R110" V 2250 3350 50  0000 L CNN
+F 1 "33R" V 2250 3100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 3300 50  0001 C CNN
+F 3 "~" H 2300 3300 50  0001 C CNN
+	1    2300 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 3300 2200 3300
+Wire Wire Line
+	2050 3400 2200 3400
+Wire Wire Line
+	2050 3600 2200 3600
+Wire Wire Line
+	2050 3800 2200 3800
+Wire Wire Line
+	2050 3900 2200 3900
+Wire Wire Line
+	2050 4100 2200 4100
+Wire Wire Line
+	2500 3600 2400 3600
+Wire Wire Line
+	2500 3800 2400 3800
+Wire Wire Line
+	2400 3900 2500 3900
+Wire Wire Line
+	2500 4100 2400 4100
+Wire Wire Line
+	2500 3300 2400 3300
+Wire Wire Line
+	2400 3400 2500 3400
+Wire Wire Line
+	1400 3300 1550 3300
+Wire Wire Line
+	1400 3400 1550 3400
+Wire Wire Line
+	1400 3600 1550 3600
+Wire Wire Line
+	1400 3800 1550 3800
+Wire Wire Line
+	1400 3900 1550 3900
+Wire Wire Line
+	1200 3300 1100 3300
+Wire Wire Line
+	1100 3400 1200 3400
+Wire Wire Line
+	1200 3600 1100 3600
+Wire Wire Line
+	1100 3800 1200 3800
+Wire Wire Line
+	1200 3900 1100 3900
+Wire Wire Line
+	1400 4100 1550 4100
+Wire Wire Line
+	1200 4100 1100 4100
 $EndSCHEMATC
