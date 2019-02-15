@@ -60,17 +60,24 @@ PN532 nfc = PN532(intf);           // Create PN532 instance
 Tone    Player;                    // Create a Tone-Player instance
 
 void setup() {
-	Serial.begin(9600);		// Initialize serial communications with the PC
-	while (!Serial);		// Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4)
+	Serial.begin(9600);		           // Initialize serial communications with the PC
+	while (!Serial);		             // Do nothing if no serial port is opened (added for Arduinos based on ATMEGA32U4)
+  pinMode(9, OUTPUT);              // nReset to PN532 Board
+  digitalWrite(9, HIGH);
+  digitalWrite(9, LOW);            // nReset High -> Low 
+  delay(400);                      // keep nReset Low for a while
+  digitalWrite(9, HIGH);           // end Reset
   nfc.begin();
   uint32_t versiondata = nfc.getFirmwareVersion();
   if (! versiondata) {
     Serial.println("#Didn't find PN53x board");
+    delay(2000);
+    asm volatile ("  jmp 0");        // Reset Reader
     //while (1); // halt
   } else {
     Serial.print("#Found chip PN5"); Serial.println((versiondata>>24) & 0xFF, HEX); 
-    Serial.print("Firmware ver. "); Serial.print((versiondata>>16) & 0xFF, DEC); 
-    Serial.println('.'); Serial.println((versiondata>>8) & 0xFF, DEC);
+    Serial.print("#Firmware ver. "); Serial.print((versiondata>>16) & 0xFF, DEC); 
+    Serial.print('.'); Serial.println((versiondata>>8) & 0xFF, DEC);
   }
 	Serial.println(F("#Scan PICC to see UID, SAK, type, and data blocks..."));
   nfc.SAMConfig();
@@ -80,6 +87,7 @@ void setup() {
   digitalWrite(6, HIGH);
   digitalWrite(5, HIGH);
   digitalWrite(4, HIGH);
+  digitalWrite(3, HIGH);
   pinMode(8, OUTPUT);
   pinMode(7, OUTPUT);
   pinMode(6, OUTPUT);
@@ -202,8 +210,6 @@ void loop() {
  uint8_t *pktbuf;
  uint8_t pktlen;
  pktbuf = nfc.getBuffer(&pktlen);
- uint8_t *pktbfr = &uidLength;
- pktbfr--;
  //Serial.print(*pktbfr, HEX);
  Serial.print(pktbuf[4] < 0x10 ? "0" : "");
  Serial.print(pktbuf[4], HEX);
