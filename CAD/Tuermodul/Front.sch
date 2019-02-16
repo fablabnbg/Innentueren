@@ -14,22 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6450 1200 1    50   Input ~ 0
-UID
-$Comp
-L Device:LED_Small D?
-U 1 1 5C5A398D
-P 6450 1900
-AR Path="/5C5A398D" Ref="D?"  Part="1" 
-AR Path="/5C5BDAF5/5C5A398D" Ref="D?"  Part="1" 
-AR Path="/5C54653F/5C5A398D" Ref="D302"  Part="1" 
-F 0 "D302" H 6350 2000 50  0000 C CNN
-F 1 "rt" H 6350 1850 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" V 6450 1900 50  0001 C CNN
-F 3 "~" V 6450 1900 50  0001 C CNN
-	1    6450 1900
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:Q_NPN_CBE Q?
 U 1 1 5C5A399D
@@ -252,35 +236,22 @@ Wire Wire Line
 	8550 1450 8650 1450
 Wire Wire Line
 	8550 1350 8650 1350
-Text HLabel 1550 3150 0    50   Input ~ 0
+Text HLabel 1550 3050 0    50   Input ~ 0
 DA_Tx
-Text HLabel 1550 3250 0    50   Input ~ 0
+Text HLabel 1550 3150 0    50   Input ~ 0
 DA_Rx
-Text HLabel 2250 3150 2    50   Input ~ 0
+Text HLabel 2250 3050 2    50   Input ~ 0
 DB_Tx
-Text HLabel 2250 3250 2    50   Input ~ 0
+Text HLabel 2250 3150 2    50   Input ~ 0
 DB_Rx
-Text HLabel 1550 3850 0    50   Input ~ 0
+Text HLabel 1550 3750 0    50   Input ~ 0
 DC_Tx
-Text HLabel 1550 3950 0    50   Input ~ 0
+Text HLabel 1550 3850 0    50   Input ~ 0
 DC_Rx
-Text HLabel 2250 3850 2    50   Input ~ 0
+Text HLabel 2250 3750 2    50   Input ~ 0
 DD_Tx
-Text HLabel 2250 3950 2    50   Input ~ 0
+Text HLabel 2250 3850 2    50   Input ~ 0
 DD_Rx
-$Comp
-L Connector_Generic:Conn_02x25_Counter_Clockwise J?
-U 1 1 5C5A42FA
-P 1850 3850
-AR Path="/5C5BDAF5/5C5A42FA" Ref="J?"  Part="1" 
-AR Path="/5C54653F/5C5A42FA" Ref="J301"  Part="1" 
-F 0 "J301" H 1900 5267 50  0000 C CNN
-F 1 "Conn_02x25_Counter_Clockwise" H 1900 5176 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical" H 1850 3850 50  0001 C CNN
-F 3 "~" H 1850 3850 50  0001 C CNN
-	1    1850 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1650 2650 1250 2650
 Wire Wire Line
@@ -291,50 +262,48 @@ Text HLabel 1600 2950 0    50   Output ~ 0
 Fuse_Error
 Wire Wire Line
 	1650 2950 1600 2950
-Text HLabel 1600 3050 0    50   Input ~ 0
-UID
-Wire Wire Line
-	1650 3050 1600 3050
-Text HLabel 1550 3350 0    50   Output ~ 0
+Text HLabel 1550 3250 0    50   Output ~ 0
 DoorA_Lock
-Text HLabel 1550 3550 0    50   Input ~ 0
-DoorA_MK
-Text HLabel 1550 3650 0    50   Input ~ 0
-DoorA_12V
-Text HLabel 1550 3750 0    50   Input ~ 0
-DoorA_VCC
-Text HLabel 2250 3350 2    50   Output ~ 0
-DoorB_Lock
-Text HLabel 1550 4050 0    50   Output ~ 0
-DoorC_Lock
-Text HLabel 2250 4050 2    50   Output ~ 0
-DoorD_Lock
-Text HLabel 2250 3550 2    50   Input ~ 0
-DoorB_MK
-Text HLabel 1550 4250 0    50   Input ~ 0
-DoorC_MK
-Text HLabel 2250 4250 2    50   Input ~ 0
-DoorD_MK
-Text HLabel 2250 3650 2    50   Input ~ 0
-DoorB_12V
-Text HLabel 1550 4350 0    50   Input ~ 0
-DoorC_12V
-Text HLabel 2250 4350 2    50   Input ~ 0
-DoorD_12V
-Text HLabel 2250 3750 2    50   Input ~ 0
-DoorB_VCC
-Text HLabel 1550 4450 0    50   Input ~ 0
-DoorC_VCC
-Text HLabel 2250 4450 2    50   Input ~ 0
-DoorD_VCC
 Text HLabel 1550 3450 0    50   Input ~ 0
-DoorA_Auto
+DoorA_MK
+Text HLabel 1550 3550 0    50   Input ~ 0
+DoorA_12V
+Text HLabel 1550 3650 0    50   Input ~ 0
+DoorA_VCC
+Text HLabel 2250 3250 2    50   Output ~ 0
+DoorB_Lock
+Text HLabel 1550 3950 0    50   Output ~ 0
+DoorC_Lock
+Text HLabel 2250 3950 2    50   Output ~ 0
+DoorD_Lock
 Text HLabel 2250 3450 2    50   Input ~ 0
-DoorB_Auto
+DoorB_MK
 Text HLabel 1550 4150 0    50   Input ~ 0
-DoorC_Auto
+DoorC_MK
 Text HLabel 2250 4150 2    50   Input ~ 0
+DoorD_MK
+Text HLabel 2250 3550 2    50   Input ~ 0
+DoorB_12V
+Text HLabel 1550 4250 0    50   Input ~ 0
+DoorC_12V
+Text HLabel 2250 4250 2    50   Input ~ 0
+DoorD_12V
+Text HLabel 2250 3650 2    50   Input ~ 0
+DoorB_VCC
+Text HLabel 1550 4350 0    50   Input ~ 0
+DoorC_VCC
+Text HLabel 2250 4350 2    50   Input ~ 0
+DoorD_VCC
+Text HLabel 1550 3350 0    50   Input ~ 0
+DoorA_Auto
+Text HLabel 2250 3350 2    50   Input ~ 0
+DoorB_Auto
+Text HLabel 1550 4050 0    50   Input ~ 0
+DoorC_Auto
+Text HLabel 2250 4050 2    50   Input ~ 0
 DoorD_Auto
+Wire Wire Line
+	1550 3050 1650 3050
 Wire Wire Line
 	1550 3150 1650 3150
 Wire Wire Line
@@ -362,35 +331,33 @@ Wire Wire Line
 Wire Wire Line
 	1550 4350 1650 4350
 Wire Wire Line
-	1550 4450 1650 4450
+	2250 4350 2150 4350
 Wire Wire Line
-	2250 4450 2150 4450
+	2150 4250 2250 4250
 Wire Wire Line
-	2150 4350 2250 4350
+	2250 4150 2150 4150
 Wire Wire Line
-	2250 4250 2150 4250
+	2150 4050 2250 4050
 Wire Wire Line
-	2150 4150 2250 4150
+	2250 3950 2150 3950
 Wire Wire Line
-	2250 4050 2150 4050
+	2150 3850 2250 3850
 Wire Wire Line
-	2150 3950 2250 3950
+	2250 3750 2150 3750
 Wire Wire Line
-	2250 3850 2150 3850
+	2150 3650 2250 3650
 Wire Wire Line
-	2150 3750 2250 3750
+	2250 3550 2150 3550
 Wire Wire Line
-	2250 3650 2150 3650
+	2150 3450 2250 3450
 Wire Wire Line
-	2150 3550 2250 3550
+	2250 3350 2150 3350
 Wire Wire Line
-	2250 3450 2150 3450
+	2150 3250 2250 3250
 Wire Wire Line
-	2150 3350 2250 3350
+	2250 3150 2150 3150
 Wire Wire Line
-	2250 3250 2150 3250
-Wire Wire Line
-	2150 3150 2250 3150
+	2150 3050 2250 3050
 Text HLabel 8650 1350 2    50   Input ~ 0
 DA_Tx
 Text HLabel 8650 1450 2    50   Input ~ 0
@@ -444,44 +411,10 @@ F 3 "~" H 5250 2450 50  0001 C CNN
 	1    5250 2450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5C6423A6
-P 4900 2450
-AR Path="/5C6423A6" Ref="#PWR?"  Part="1" 
-AR Path="/5C5BDAF5/5C6423A6" Ref="#PWR?"  Part="1" 
-AR Path="/5C54653F/5C6423A6" Ref="#PWR0304"  Part="1" 
-F 0 "#PWR0304" H 4900 2300 50  0001 C CNN
-F 1 "+5V" H 4915 2623 50  0000 C CNN
-F 2 "" H 4900 2450 50  0001 C CNN
-F 3 "" H 4900 2450 50  0001 C CNN
-	1    4900 2450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6450 2000 6450 2100
-Text Notes 6800 1850 2    50   ~ 0
-UID LED
 Text Notes 7200 1850 2    50   ~ 0
 5V LED
 Wire Wire Line
 	6900 2000 6900 2100
-Wire Wire Line
-	6450 1650 6450 1800
-$Comp
-L Device:R_Small R?
-U 1 1 5C5A3986
-P 6450 1550
-AR Path="/5C5A3986" Ref="R?"  Part="1" 
-AR Path="/5C5BDAF5/5C5A3986" Ref="R?"  Part="1" 
-AR Path="/5C54653F/5C5A3986" Ref="R303"  Part="1" 
-F 0 "R303" V 6350 1550 50  0000 C CNN
-F 1 "330R" V 6550 1550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6450 1550 50  0001 C CNN
-F 3 "~" H 6450 1550 50  0001 C CNN
-	1    6450 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6900 1650 6900 1800
 $Comp
@@ -502,8 +435,6 @@ Wire Wire Line
 	5150 2450 4900 2450
 Wire Wire Line
 	6900 1200 6900 1450
-Wire Wire Line
-	6450 1200 6450 1450
 Wire Wire Line
 	8250 1350 8350 1350
 Wire Wire Line
@@ -968,17 +899,6 @@ F 3 "" H 1200 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDA #PWR0306
-U 1 1 5C5DB722
-P 6450 2100
-F 0 "#PWR0306" H 6450 1850 50  0001 C CNN
-F 1 "GNDA" H 6455 1927 50  0000 C CNN
-F 2 "" H 6450 2100 50  0001 C CNN
-F 3 "" H 6450 2100 50  0001 C CNN
-	1    6450 2100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDA #PWR0308
 U 1 1 5C5DBB47
 P 6900 2100
@@ -1087,5 +1007,29 @@ F 2 "" H 6900 1200 50  0001 C CNN
 F 3 "" H 6900 1200 50  0001 C CNN
 	1    6900 1200
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x20_Counter_Clockwise J?
+U 1 1 5C7AAB1D
+P 1850 3550
+AR Path="/5C5BDAF5/5C7AAB1D" Ref="J?"  Part="1" 
+AR Path="/5C54653F/5C7AAB1D" Ref="J301"  Part="1" 
+F 0 "J301" H 1900 4667 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise" H 1900 4576 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 1850 3550 50  0001 C CNN
+F 3 "~" H 1850 3550 50  0001 C CNN
+	1    1850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5P #PWR0144
+U 1 1 5C7BA058
+P 4900 2450
+F 0 "#PWR0144" H 4900 2300 50  0001 C CNN
+F 1 "+5P" H 4915 2623 50  0000 C CNN
+F 2 "" H 4900 2450 50  0001 C CNN
+F 3 "" H 4900 2450 50  0001 C CNN
+	1    4900 2450
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

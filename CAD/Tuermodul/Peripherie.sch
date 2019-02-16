@@ -25,7 +25,7 @@ F 1 "Q_PMOS_GDS" H 4356 1455 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4350 1600 50  0001 C CNN
 F 3 "~" H 4150 1500 50  0001 C CNN
 	1    4150 1500
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -79,7 +79,7 @@ F 1 "Q_PMOS_GDS" H 4356 3305 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4350 3450 50  0001 C CNN
 F 3 "~" H 4150 3350 50  0001 C CNN
 	1    4150 3350
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4250 3150 4250 3050
@@ -161,7 +161,7 @@ F 1 "Q_PMOS_GDS" H 4356 4905 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4350 5050 50  0001 C CNN
 F 3 "~" H 4150 4950 50  0001 C CNN
 	1    4150 4950
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4250 4750 4250 4650
@@ -204,7 +204,7 @@ F 1 "Q_PMOS_GDS" H 4356 6555 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4350 6700 50  0001 C CNN
 F 3 "~" H 4150 6600 50  0001 C CNN
 	1    4150 6600
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4250 6400 4250 6300
@@ -251,19 +251,6 @@ F 1 "+12V" H 3315 3173 50  0000 C CNN
 F 2 "" H 3300 3000 50  0001 C CNN
 F 3 "" H 3300 3000 50  0001 C CNN
 	1    3300 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C5F9E5C
-P 3300 4150
-AR Path="/5C5F9E5C" Ref="#PWR?"  Part="1" 
-AR Path="/5C5BDAF5/5C5F9E5C" Ref="#PWR0204"  Part="1" 
-F 0 "#PWR0204" H 3300 3900 50  0001 C CNN
-F 1 "GND" H 3305 3977 50  0000 C CNN
-F 2 "" H 3300 4150 50  0001 C CNN
-F 3 "" H 3300 4150 50  0001 C CNN
-	1    3300 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -326,19 +313,6 @@ F 3 "" H 3300 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5C5FAB97
-P 3300 5800
-AR Path="/5C5FAB97" Ref="#PWR?"  Part="1" 
-AR Path="/5C5BDAF5/5C5FAB97" Ref="#PWR0202"  Part="1" 
-F 0 "#PWR0202" H 3300 5550 50  0001 C CNN
-F 1 "GND" H 3305 5627 50  0000 C CNN
-F 2 "" H 3300 5800 50  0001 C CNN
-F 3 "" H 3300 5800 50  0001 C CNN
-	1    3300 5800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 5C5FABAA
 P 2800 5200
@@ -380,19 +354,6 @@ F 1 "+12V" H 3315 6423 50  0000 C CNN
 F 2 "" H 3300 6250 50  0001 C CNN
 F 3 "" H 3300 6250 50  0001 C CNN
 	1    3300 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C5FC3EB
-P 3300 7650
-AR Path="/5C5FC3EB" Ref="#PWR?"  Part="1" 
-AR Path="/5C5BDAF5/5C5FC3EB" Ref="#PWR0201"  Part="1" 
-F 0 "#PWR0201" H 3300 7400 50  0001 C CNN
-F 1 "GND" H 3305 7477 50  0000 C CNN
-F 2 "" H 3300 7650 50  0001 C CNN
-F 3 "" H 3300 7650 50  0001 C CNN
-	1    3300 7650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1146,33 +1107,22 @@ Wire Wire Line
 	5550 2850 5300 2850
 Wire Wire Line
 	5300 1100 5550 1100
-Text HLabel 10100 4400 0    50   Input ~ 0
+Text HLabel 10100 4300 0    50   Input ~ 0
 DA_Tx
-Text HLabel 10100 4500 0    50   Input ~ 0
+Text HLabel 10100 4400 0    50   Input ~ 0
 DA_Rx
-Text HLabel 10800 4400 2    50   Input ~ 0
+Text HLabel 10800 4300 2    50   Input ~ 0
 DB_Tx
-Text HLabel 10800 4500 2    50   Input ~ 0
+Text HLabel 10800 4400 2    50   Input ~ 0
 DB_Rx
-Text HLabel 10100 5100 0    50   Input ~ 0
+Text HLabel 10100 5000 0    50   Input ~ 0
 DC_Tx
-Text HLabel 10100 5200 0    50   Input ~ 0
+Text HLabel 10100 5100 0    50   Input ~ 0
 DC_Rx
-Text HLabel 10800 5100 2    50   Input ~ 0
+Text HLabel 10800 5000 2    50   Input ~ 0
 DD_Tx
-Text HLabel 10800 5200 2    50   Input ~ 0
+Text HLabel 10800 5100 2    50   Input ~ 0
 DD_Rx
-$Comp
-L Connector_Generic:Conn_02x25_Counter_Clockwise J201
-U 1 1 5C5D89B8
-P 10400 5100
-F 0 "J201" H 10450 6517 50  0000 C CNN
-F 1 "Conn_02x25_Counter_Clockwise" H 10450 6426 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical" H 10400 5100 50  0001 C CNN
-F 3 "~" H 10400 5100 50  0001 C CNN
-	1    10400 5100
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5C5D914C
@@ -1222,41 +1172,37 @@ Text HLabel 10150 4200 0    50   Output ~ 0
 Fuse_Error
 Wire Wire Line
 	10200 4200 10150 4200
-Text HLabel 10150 4300 0    50   Input ~ 0
-UID
-Wire Wire Line
-	10200 4300 10150 4300
-Text HLabel 10100 4600 0    50   Output ~ 0
+Text HLabel 10100 4500 0    50   Output ~ 0
 DoorA_Lock
-Text HLabel 10100 4800 0    50   Input ~ 0
+Text HLabel 10100 4700 0    50   Input ~ 0
 DoorA_MK
-Text HLabel 10100 4900 0    50   Input ~ 0
+Text HLabel 10100 4800 0    50   Input ~ 0
 DoorA_12V
-Text HLabel 10100 5000 0    50   Input ~ 0
+Text HLabel 10100 4900 0    50   Input ~ 0
 DoorA_VCC
-Text HLabel 10800 4600 2    50   Output ~ 0
+Text HLabel 10800 4500 2    50   Output ~ 0
 DoorB_Lock
-Text HLabel 10100 5300 0    50   Output ~ 0
+Text HLabel 10100 5200 0    50   Output ~ 0
 DoorC_Lock
-Text HLabel 10800 5300 2    50   Output ~ 0
+Text HLabel 10800 5200 2    50   Output ~ 0
 DoorD_Lock
-Text HLabel 10800 4800 2    50   Input ~ 0
+Text HLabel 10800 4700 2    50   Input ~ 0
 DoorB_MK
-Text HLabel 10100 5500 0    50   Input ~ 0
+Text HLabel 10100 5400 0    50   Input ~ 0
 DoorC_MK
-Text HLabel 10800 5500 2    50   Input ~ 0
+Text HLabel 10800 5400 2    50   Input ~ 0
 DoorD_MK
-Text HLabel 10800 4900 2    50   Input ~ 0
+Text HLabel 10800 4800 2    50   Input ~ 0
 DoorB_12V
-Text HLabel 10100 5600 0    50   Input ~ 0
+Text HLabel 10100 5500 0    50   Input ~ 0
 DoorC_12V
-Text HLabel 10800 5600 2    50   Input ~ 0
+Text HLabel 10800 5500 2    50   Input ~ 0
 DoorD_12V
-Text HLabel 10800 5000 2    50   Input ~ 0
+Text HLabel 10800 4900 2    50   Input ~ 0
 DoorB_VCC
-Text HLabel 10100 5700 0    50   Input ~ 0
+Text HLabel 10100 5600 0    50   Input ~ 0
 DoorC_VCC
-Text HLabel 10800 5700 2    50   Input ~ 0
+Text HLabel 10800 5600 2    50   Input ~ 0
 DoorD_VCC
 Text HLabel 4350 1850 2    50   Input ~ 0
 DoorA_Auto
@@ -1288,13 +1234,13 @@ Wire Wire Line
 	4350 2000 4250 2000
 Wire Wire Line
 	4250 2000 4250 2100
-Text HLabel 10100 4700 0    50   Input ~ 0
+Text HLabel 10100 4600 0    50   Input ~ 0
 DoorA_Auto
-Text HLabel 10800 4700 2    50   Input ~ 0
+Text HLabel 10800 4600 2    50   Input ~ 0
 DoorB_Auto
-Text HLabel 10100 5400 0    50   Input ~ 0
+Text HLabel 10100 5300 0    50   Input ~ 0
 DoorC_Auto
-Text HLabel 10800 5400 2    50   Input ~ 0
+Text HLabel 10800 5300 2    50   Input ~ 0
 DoorD_Auto
 Wire Wire Line
 	10100 4400 10200 4400
@@ -1323,10 +1269,6 @@ Wire Wire Line
 Wire Wire Line
 	10100 5600 10200 5600
 Wire Wire Line
-	10100 5700 10200 5700
-Wire Wire Line
-	10800 5700 10700 5700
-Wire Wire Line
 	10700 5600 10800 5600
 Wire Wire Line
 	10800 5500 10700 5500
@@ -1354,19 +1296,6 @@ Wire Wire Line
 	10700 4400 10800 4400
 Wire Wire Line
 	9250 2100 9250 2950
-$Comp
-L power:GND #PWR?
-U 1 1 5C5C48A6
-P 3300 2450
-AR Path="/5C5C48A6" Ref="#PWR?"  Part="1" 
-AR Path="/5C5BDAF5/5C5C48A6" Ref="#PWR0203"  Part="1" 
-F 0 "#PWR0203" H 3300 2200 50  0001 C CNN
-F 1 "GND" H 3305 2277 50  0000 C CNN
-F 2 "" H 3300 2450 50  0001 C CNN
-F 3 "" H 3300 2450 50  0001 C CNN
-	1    3300 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3300 7050 3300 7650
 Wire Wire Line
@@ -1547,4 +1476,67 @@ Wire Wire Line
 	6000 3600 6300 3600
 Wire Wire Line
 	6300 3600 6300 3650
+Text HLabel 3200 2450 0    50   Input ~ 0
+~PWR_EN~
+Text HLabel 3200 4150 0    50   Input ~ 0
+~PWR_EN~
+Text HLabel 3200 5800 0    50   Input ~ 0
+~PWR_EN~
+Text HLabel 3200 7650 0    50   Input ~ 0
+~PWR_EN~
+Text HLabel 1400 1300 3    50   Input ~ 0
+~PWR_EN~
+Wire Wire Line
+	3200 2450 3300 2450
+Wire Wire Line
+	3200 4150 3300 4150
+Wire Wire Line
+	3200 5800 3300 5800
+Wire Wire Line
+	3300 7650 3200 7650
+$Comp
+L power:+5V #PWR?
+U 1 1 5C7550B2
+P 1400 900
+AR Path="/5C7550B2" Ref="#PWR?"  Part="1" 
+AR Path="/5C5BDAF5/5C7550B2" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 1400 750 50  0001 C CNN
+F 1 "+5V" H 1400 1050 50  0000 C CNN
+F 2 "" H 1400 900 50  0001 C CNN
+F 3 "" H 1400 900 50  0001 C CNN
+	1    1400 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C7553DD
+P 1400 1100
+AR Path="/5C7553DD" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5C7553DD" Ref="R205"  Part="1" 
+F 0 "R205" V 1300 1100 50  0000 C CNN
+F 1 "10k" V 1500 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1400 1100 50  0001 C CNN
+F 3 "~" H 1400 1100 50  0001 C CNN
+	1    1400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 900  1400 1000
+Wire Wire Line
+	1400 1200 1400 1300
+$Comp
+L Connector_Generic:Conn_02x20_Counter_Clockwise J201
+U 1 1 5C76CCF2
+P 10400 4800
+F 0 "J201" H 10450 5917 50  0000 C CNN
+F 1 "Conn_02x20_Counter_Clockwise" H 10450 5826 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 10400 4800 50  0001 C CNN
+F 3 "~" H 10400 4800 50  0001 C CNN
+	1    10400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 4300 10700 4300
+Wire Wire Line
+	10200 4300 10100 4300
 $EndSCHEMATC
