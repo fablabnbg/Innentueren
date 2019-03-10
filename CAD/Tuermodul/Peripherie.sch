@@ -1107,102 +1107,94 @@ Wire Wire Line
 	5550 2850 5300 2850
 Wire Wire Line
 	5300 1100 5550 1100
-Text HLabel 10100 4300 0    50   Input ~ 0
+Text HLabel 7050 4750 0    50   Input ~ 0
 DA_Tx
-Text HLabel 10100 4400 0    50   Input ~ 0
+Text HLabel 7050 4850 0    50   Input ~ 0
 DA_Rx
-Text HLabel 10800 4300 2    50   Input ~ 0
+Text HLabel 8700 4750 2    50   Input ~ 0
 DB_Tx
-Text HLabel 10800 4400 2    50   Input ~ 0
+Text HLabel 8700 4850 2    50   Input ~ 0
 DB_Rx
-Text HLabel 10100 5000 0    50   Input ~ 0
+Text HLabel 7050 5450 0    50   Input ~ 0
 DC_Tx
-Text HLabel 10100 5100 0    50   Input ~ 0
+Text HLabel 7050 5550 0    50   Input ~ 0
 DC_Rx
-Text HLabel 10800 5000 2    50   Input ~ 0
+Text HLabel 8700 5450 2    50   Input ~ 0
 DD_Tx
-Text HLabel 10800 5100 2    50   Input ~ 0
+Text HLabel 8700 5550 2    50   Input ~ 0
 DD_Rx
 $Comp
 L power:+12V #PWR?
 U 1 1 5C5D914C
-P 9800 3900
+P 7250 4450
 AR Path="/5C5D914C" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C5D914C" Ref="#PWR0218"  Part="1" 
-F 0 "#PWR0218" H 9800 3750 50  0001 C CNN
-F 1 "+12V" H 9900 4050 50  0000 C CNN
-F 2 "" H 9800 3900 50  0001 C CNN
-F 3 "" H 9800 3900 50  0001 C CNN
-	1    9800 3900
+F 0 "#PWR0218" H 7250 4300 50  0001 C CNN
+F 1 "+12V" H 7350 4600 50  0000 C CNN
+F 2 "" H 7250 4450 50  0001 C CNN
+F 3 "" H 7250 4450 50  0001 C CNN
+	1    7250 4450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5C5D9670
-P 9800 4000
+P 8700 4450
 AR Path="/5C5D9670" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C5D9670" Ref="#PWR0219"  Part="1" 
-F 0 "#PWR0219" H 9800 3850 50  0001 C CNN
-F 1 "+5V" H 9800 4150 50  0000 C CNN
-F 2 "" H 9800 4000 50  0001 C CNN
-F 3 "" H 9800 4000 50  0001 C CNN
-	1    9800 4000
-	0    -1   -1   0   
+F 0 "#PWR0219" H 8700 4300 50  0001 C CNN
+F 1 "+5V" H 8700 4600 50  0000 C CNN
+F 2 "" H 8700 4450 50  0001 C CNN
+F 3 "" H 8700 4450 50  0001 C CNN
+	1    8700 4450
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10200 3900 9800 3900
-Wire Wire Line
-	9800 4000 10200 4000
 $Comp
 L power:GND #PWR?
 U 1 1 5C5F45D1
-P 9750 4100
+P 7550 6400
 AR Path="/5C5F45D1" Ref="#PWR?"  Part="1" 
 AR Path="/5C5BDAF5/5C5F45D1" Ref="#PWR0217"  Part="1" 
-F 0 "#PWR0217" H 9750 3850 50  0001 C CNN
-F 1 "GND" H 9800 3900 50  0000 R CNN
-F 2 "" H 9750 4100 50  0001 C CNN
-F 3 "" H 9750 4100 50  0001 C CNN
-	1    9750 4100
-	0    1    1    0   
+F 0 "#PWR0217" H 7550 6150 50  0001 C CNN
+F 1 "GND" H 7600 6200 50  0000 R CNN
+F 2 "" H 7550 6400 50  0001 C CNN
+F 3 "" H 7550 6400 50  0001 C CNN
+	1    7550 6400
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10200 4100 9750 4100
-Text HLabel 10150 4200 0    50   Output ~ 0
+Text HLabel 7050 4550 0    50   Output ~ 0
 Fuse_Error
-Wire Wire Line
-	10200 4200 10150 4200
-Text HLabel 10100 4500 0    50   Output ~ 0
+Text HLabel 7050 5150 0    50   Output ~ 0
 DoorA_Lock
-Text HLabel 10100 4700 0    50   Input ~ 0
+Text HLabel 7050 4950 0    50   Input ~ 0
 DoorA_MK
-Text HLabel 10100 4800 0    50   Input ~ 0
+Text HLabel 7050 5050 0    50   Input ~ 0
 DoorA_12V
-Text HLabel 10100 4900 0    50   Input ~ 0
+Text HLabel 7050 4650 0    50   Input ~ 0
 DoorA_VCC
-Text HLabel 10800 4500 2    50   Output ~ 0
+Text HLabel 8700 5150 2    50   Output ~ 0
 DoorB_Lock
-Text HLabel 10100 5200 0    50   Output ~ 0
+Text HLabel 7050 5850 0    50   Output ~ 0
 DoorC_Lock
-Text HLabel 10800 5200 2    50   Output ~ 0
+Text HLabel 8700 5850 2    50   Output ~ 0
 DoorD_Lock
-Text HLabel 10800 4700 2    50   Input ~ 0
+Text HLabel 8700 4950 2    50   Input ~ 0
 DoorB_MK
-Text HLabel 10100 5400 0    50   Input ~ 0
+Text HLabel 7050 5650 0    50   Input ~ 0
 DoorC_MK
-Text HLabel 10800 5400 2    50   Input ~ 0
+Text HLabel 8700 5650 2    50   Input ~ 0
 DoorD_MK
-Text HLabel 10800 4800 2    50   Input ~ 0
+Text HLabel 8700 5050 2    50   Input ~ 0
 DoorB_12V
-Text HLabel 10100 5500 0    50   Input ~ 0
+Text HLabel 7050 5750 0    50   Input ~ 0
 DoorC_12V
-Text HLabel 10800 5500 2    50   Input ~ 0
+Text HLabel 8700 5750 2    50   Input ~ 0
 DoorD_12V
-Text HLabel 10800 4900 2    50   Input ~ 0
+Text HLabel 8700 4650 2    50   Input ~ 0
 DoorB_VCC
-Text HLabel 10100 5600 0    50   Input ~ 0
+Text HLabel 7050 5350 0    50   Input ~ 0
 DoorC_VCC
-Text HLabel 10800 5600 2    50   Input ~ 0
+Text HLabel 8700 5350 2    50   Input ~ 0
 DoorD_VCC
 Text HLabel 4350 1850 2    50   Input ~ 0
 DoorA_Auto
@@ -1234,66 +1226,14 @@ Wire Wire Line
 	4350 2000 4250 2000
 Wire Wire Line
 	4250 2000 4250 2100
-Text HLabel 10100 4600 0    50   Input ~ 0
+Text HLabel 7050 5250 0    50   Input ~ 0
 DoorA_Auto
-Text HLabel 10800 4600 2    50   Input ~ 0
+Text HLabel 8700 5250 2    50   Input ~ 0
 DoorB_Auto
-Text HLabel 10100 5300 0    50   Input ~ 0
+Text HLabel 7050 5950 0    50   Input ~ 0
 DoorC_Auto
-Text HLabel 10800 5300 2    50   Input ~ 0
+Text HLabel 8700 5950 2    50   Input ~ 0
 DoorD_Auto
-Wire Wire Line
-	10100 4400 10200 4400
-Wire Wire Line
-	10100 4500 10200 4500
-Wire Wire Line
-	10100 4600 10200 4600
-Wire Wire Line
-	10100 4700 10200 4700
-Wire Wire Line
-	10100 4800 10200 4800
-Wire Wire Line
-	10100 4900 10200 4900
-Wire Wire Line
-	10100 5000 10200 5000
-Wire Wire Line
-	10100 5100 10200 5100
-Wire Wire Line
-	10100 5200 10200 5200
-Wire Wire Line
-	10100 5300 10200 5300
-Wire Wire Line
-	10100 5400 10200 5400
-Wire Wire Line
-	10100 5500 10200 5500
-Wire Wire Line
-	10100 5600 10200 5600
-Wire Wire Line
-	10700 5600 10800 5600
-Wire Wire Line
-	10800 5500 10700 5500
-Wire Wire Line
-	10700 5400 10800 5400
-Wire Wire Line
-	10800 5300 10700 5300
-Wire Wire Line
-	10700 5200 10800 5200
-Wire Wire Line
-	10800 5100 10700 5100
-Wire Wire Line
-	10700 5000 10800 5000
-Wire Wire Line
-	10800 4900 10700 4900
-Wire Wire Line
-	10700 4800 10800 4800
-Wire Wire Line
-	10800 4700 10700 4700
-Wire Wire Line
-	10700 4600 10800 4600
-Wire Wire Line
-	10800 4500 10700 4500
-Wire Wire Line
-	10700 4400 10800 4400
 Wire Wire Line
 	9250 2100 9250 2950
 Wire Wire Line
@@ -1525,18 +1465,322 @@ Wire Wire Line
 Wire Wire Line
 	1400 1200 1400 1300
 $Comp
-L Connector_Generic:Conn_02x20_Counter_Clockwise J201
+L Connector_Generic:Conn_02x20_Odd_Even J201
 U 1 1 5C76CCF2
-P 10400 4800
-F 0 "J201" H 10450 5917 50  0000 C CNN
-F 1 "Conn_02x20_Counter_Clockwise" H 10450 5826 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 10400 4800 50  0001 C CNN
-F 3 "~" H 10400 4800 50  0001 C CNN
-	1    10400 4800
+P 7850 5350
+F 0 "J201" H 7900 6467 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 7900 6376 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 7850 5350 50  0001 C CNN
+F 3 "~" H 7850 5350 50  0001 C CNN
+	1    7850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C90D28E
+P 7400 4750
+AR Path="/5C90D28E" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5C90D28E" Ref="R206"  Part="1" 
+F 0 "R206" V 7450 4850 50  0000 L CNN
+F 1 "1k" V 7450 4550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7400 4750 50  0001 C CNN
+F 3 "~" H 7400 4750 50  0001 C CNN
+	1    7400 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 5150 7650 5150
+Wire Wire Line
+	7050 5250 7650 5250
+Wire Wire Line
+	7050 5050 7650 5050
+Wire Wire Line
+	7050 5850 7650 5850
+Wire Wire Line
+	7050 5950 7650 5950
+Wire Wire Line
+	7050 5750 7650 5750
+Wire Wire Line
+	7650 4450 7250 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5C9D4ED1
+P 8700 4550
+AR Path="/5C9D4ED1" Ref="#PWR?"  Part="1" 
+AR Path="/5C5BDAF5/5C9D4ED1" Ref="#PWR0202"  Part="1" 
+F 0 "#PWR0202" H 8700 4300 50  0001 C CNN
+F 1 "GND" H 8750 4350 50  0000 R CNN
+F 2 "" H 8700 4550 50  0001 C CNN
+F 3 "" H 8700 4550 50  0001 C CNN
+	1    8700 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 4550 7650 4550
+$Comp
+L Device:R_Small R?
+U 1 1 5CA55B8A
+P 7400 4850
+AR Path="/5CA55B8A" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA55B8A" Ref="R207"  Part="1" 
+F 0 "R207" V 7450 4950 50  0000 L CNN
+F 1 "1k" V 7450 4650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7400 4850 50  0001 C CNN
+F 3 "~" H 7400 4850 50  0001 C CNN
+	1    7400 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CA55C88
+P 7400 5450
+AR Path="/5CA55C88" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA55C88" Ref="R215"  Part="1" 
+F 0 "R215" V 7450 5550 50  0000 L CNN
+F 1 "1k" V 7450 5250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7400 5450 50  0001 C CNN
+F 3 "~" H 7400 5450 50  0001 C CNN
+	1    7400 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CA55D12
+P 7400 5550
+AR Path="/5CA55D12" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA55D12" Ref="R216"  Part="1" 
+F 0 "R216" V 7450 5650 50  0000 L CNN
+F 1 "1k" V 7450 5350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7400 5550 50  0001 C CNN
+F 3 "~" H 7400 5550 50  0001 C CNN
+	1    7400 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CA55F00
+P 7400 5350
+AR Path="/5CA55F00" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA55F00" Ref="R214"  Part="1" 
+F 0 "R214" V 7450 5450 50  0000 L CNN
+F 1 "1k" V 7450 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7400 5350 50  0001 C CNN
+F 3 "~" H 7400 5350 50  0001 C CNN
+	1    7400 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CA55F88
+P 8450 5350
+AR Path="/5CA55F88" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA55F88" Ref="R223"  Part="1" 
+F 0 "R223" V 8500 5450 50  0000 L CNN
+F 1 "1k" V 8500 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 5350 50  0001 C CNN
+F 3 "~" H 8450 5350 50  0001 C CNN
+	1    8450 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CA560C2
+P 8450 5550
+AR Path="/5CA560C2" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA560C2" Ref="R226"  Part="1" 
+F 0 "R226" V 8500 5650 50  0000 L CNN
+F 1 "1k" V 8500 5350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 5550 50  0001 C CNN
+F 3 "~" H 8450 5550 50  0001 C CNN
+	1    8450 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CA5615C
+P 8450 5450
+AR Path="/5CA5615C" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA5615C" Ref="R225"  Part="1" 
+F 0 "R225" V 8500 5550 50  0000 L CNN
+F 1 "1k" V 8500 5250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 5450 50  0001 C CNN
+F 3 "~" H 8450 5450 50  0001 C CNN
+	1    8450 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CA5627E
+P 8450 4850
+AR Path="/5CA5627E" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA5627E" Ref="R221"  Part="1" 
+F 0 "R221" V 8500 4950 50  0000 L CNN
+F 1 "1k" V 8500 4650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 4850 50  0001 C CNN
+F 3 "~" H 8450 4850 50  0001 C CNN
+	1    8450 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CA56316
+P 8450 4750
+AR Path="/5CA56316" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5CA56316" Ref="R220"  Part="1" 
+F 0 "R220" V 8500 4850 50  0000 L CNN
+F 1 "1k" V 8500 4550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 4750 50  0001 C CNN
+F 3 "~" H 8450 4750 50  0001 C CNN
+	1    8450 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB6B886
+P 8250 6400
+AR Path="/5CB6B886" Ref="#PWR?"  Part="1" 
+AR Path="/5C5BDAF5/5CB6B886" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 8250 6150 50  0001 C CNN
+F 1 "GND" H 8300 6200 50  0000 R CNN
+F 2 "" H 8250 6400 50  0001 C CNN
+F 3 "" H 8250 6400 50  0001 C CNN
+	1    8250 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10800 4300 10700 4300
+	8150 6050 8250 6050
 Wire Wire Line
-	10200 4300 10100 4300
+	8250 6050 8250 6150
+Wire Wire Line
+	8150 6150 8250 6150
+Connection ~ 8250 6150
+Wire Wire Line
+	8250 6150 8250 6250
+Wire Wire Line
+	8150 6250 8250 6250
+Connection ~ 8250 6250
+Wire Wire Line
+	8250 6250 8250 6350
+Wire Wire Line
+	8150 6350 8250 6350
+Connection ~ 8250 6350
+Wire Wire Line
+	8250 6350 8250 6400
+Wire Wire Line
+	7650 6350 7550 6350
+Wire Wire Line
+	7550 6350 7550 6400
+Wire Wire Line
+	7650 6250 7550 6250
+Wire Wire Line
+	7550 6250 7550 6350
+Connection ~ 7550 6350
+Wire Wire Line
+	7650 6150 7550 6150
+Wire Wire Line
+	7550 6150 7550 6250
+Connection ~ 7550 6250
+Wire Wire Line
+	7650 6050 7550 6050
+Wire Wire Line
+	7550 6050 7550 6150
+Connection ~ 7550 6150
+Wire Wire Line
+	7050 4750 7300 4750
+Wire Wire Line
+	7650 4750 7500 4750
+Wire Wire Line
+	7050 4850 7300 4850
+Wire Wire Line
+	7650 4850 7500 4850
+Wire Wire Line
+	7050 5350 7300 5350
+Wire Wire Line
+	7650 5350 7500 5350
+Wire Wire Line
+	7050 5450 7300 5450
+Wire Wire Line
+	7500 5450 7650 5450
+Wire Wire Line
+	7500 5550 7650 5550
+Wire Wire Line
+	7300 5550 7050 5550
+Wire Wire Line
+	8700 5550 8550 5550
+Wire Wire Line
+	8550 5450 8700 5450
+Wire Wire Line
+	8700 5350 8550 5350
+Wire Wire Line
+	8550 4750 8700 4750
+Wire Wire Line
+	8700 4850 8550 4850
+Wire Wire Line
+	8150 4450 8700 4450
+Wire Wire Line
+	8150 4550 8700 4550
+Wire Wire Line
+	8150 4750 8350 4750
+Wire Wire Line
+	8150 4850 8350 4850
+Wire Wire Line
+	8150 5950 8700 5950
+Wire Wire Line
+	8150 5850 8700 5850
+Wire Wire Line
+	8150 5750 8700 5750
+Wire Wire Line
+	8150 5550 8350 5550
+Wire Wire Line
+	8150 5050 8700 5050
+Wire Wire Line
+	8150 5150 8700 5150
+Wire Wire Line
+	8150 5250 8700 5250
+Wire Wire Line
+	8150 5350 8350 5350
+Wire Wire Line
+	8150 5450 8350 5450
+Wire Wire Line
+	8150 4950 8700 4950
+Wire Wire Line
+	8150 5650 8700 5650
+Wire Wire Line
+	7050 4950 7650 4950
+Wire Wire Line
+	7050 5650 7650 5650
+$Comp
+L Device:R_Small R?
+U 1 1 5D206D92
+P 8450 4650
+AR Path="/5D206D92" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5D206D92" Ref="R217"  Part="1" 
+F 0 "R217" V 8500 4750 50  0000 L CNN
+F 1 "1k" V 8500 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 4650 50  0001 C CNN
+F 3 "~" H 8450 4650 50  0001 C CNN
+	1    8450 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D206E1E
+P 7400 4650
+AR Path="/5D206E1E" Ref="R?"  Part="1" 
+AR Path="/5C5BDAF5/5D206E1E" Ref="R208"  Part="1" 
+F 0 "R208" V 7450 4750 50  0000 L CNN
+F 1 "1k" V 7450 4450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7400 4650 50  0001 C CNN
+F 3 "~" H 7400 4650 50  0001 C CNN
+	1    7400 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 4650 8550 4650
+Wire Wire Line
+	8350 4650 8150 4650
+Wire Wire Line
+	7650 4650 7500 4650
+Wire Wire Line
+	7300 4650 7050 4650
 $EndSCHEMATC

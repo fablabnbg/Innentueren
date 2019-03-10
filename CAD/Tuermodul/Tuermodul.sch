@@ -1492,47 +1492,39 @@ F 3 "" H 8150 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8500 3750 8150 3750
-Text HLabel 800  1450 3    50   Input ~ 0
+Text HLabel 950  1250 0    50   Input ~ 0
 DoorA_MK
-Text HLabel 900  1450 3    50   Input ~ 0
+Text HLabel 950  1350 0    50   Input ~ 0
 DoorB_MK
-Text HLabel 1000 1450 3    50   Input ~ 0
+Text HLabel 950  1450 0    50   Input ~ 0
 DoorC_MK
-Text HLabel 1100 1450 3    50   Input ~ 0
+Text HLabel 950  1550 0    50   Input ~ 0
 DoorD_MK
 $Comp
 L Device:R_Network04 RN101
 U 1 1 5C769116
-P 1000 1000
-F 0 "RN101" H 1180 1046 50  0000 L CNN
-F 1 "2k7" H 1180 955 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP5" V 1275 1000 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 1000 1000 50  0001 C CNN
-	1    1000 1000
+P 1650 950
+F 0 "RN101" H 1830 996 50  0000 L CNN
+F 1 "2k7" H 1830 905 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 1925 950 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 1650 950 50  0001 C CNN
+	1    1650 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0111
 U 1 1 5C769345
-P 800 650
-F 0 "#PWR0111" H 800 500 50  0001 C CNN
-F 1 "+5V" H 700 750 50  0000 C CNN
-F 2 "" H 800 650 50  0001 C CNN
-F 3 "" H 800 650 50  0001 C CNN
-	1    800  650 
+P 1450 600
+F 0 "#PWR0111" H 1450 450 50  0001 C CNN
+F 1 "+5V" H 1350 700 50  0000 C CNN
+F 2 "" H 1450 600 50  0001 C CNN
+F 3 "" H 1450 600 50  0001 C CNN
+	1    1450 600 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  650  800  800 
-Wire Wire Line
-	800  1200 800  1450
-Wire Wire Line
-	900  1200 900  1450
-Wire Wire Line
-	1000 1200 1000 1450
-Wire Wire Line
-	1100 1200 1100 1450
-Text Notes 850  850  0    50   ~ 0
+	1450 600  1450 750 
+Text Notes 1050 750  0    50   ~ 0
 Pull-up + Vorwiderstand LED
 Wire Wire Line
 	7100 2200 6950 2200
@@ -1760,4 +1752,112 @@ Wire Wire Line
 	1200 4100 1100 4100
 Text HLabel 10400 3200 2    50   Input ~ 0
 ~PWR_EN~
+$Comp
+L Device:C_Small C118
+U 1 1 5CF5F4A8
+P 1150 1750
+F 0 "C118" H 950 1850 50  0000 L CNN
+F 1 "100n" H 1100 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1150 1750 50  0001 C CNN
+F 3 "~" H 1150 1750 50  0001 C CNN
+	1    1150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C119
+U 1 1 5CF5F7BA
+P 1350 1750
+F 0 "C119" H 1150 1850 50  0000 L CNN
+F 1 "100n" H 1300 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1350 1750 50  0001 C CNN
+F 3 "~" H 1350 1750 50  0001 C CNN
+	1    1350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C120
+U 1 1 5CF5F828
+P 1550 1750
+F 0 "C120" H 1350 1850 50  0000 L CNN
+F 1 "100n" H 1500 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1550 1750 50  0001 C CNN
+F 3 "~" H 1550 1750 50  0001 C CNN
+	1    1550 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C121
+U 1 1 5CF5F8AA
+P 1750 1750
+F 0 "C121" H 1550 1850 50  0000 L CNN
+F 1 "100n" H 1700 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1750 1750 50  0001 C CNN
+F 3 "~" H 1750 1750 50  0001 C CNN
+	1    1750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0145
+U 1 1 5CF5FC33
+P 1150 2000
+F 0 "#PWR0145" H 1150 1750 50  0001 C CNN
+F 1 "GND" V 1155 1872 50  0000 R CNN
+F 2 "" H 1150 2000 50  0001 C CNN
+F 3 "" H 1150 2000 50  0001 C CNN
+	1    1150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1950 1150 2000
+Wire Wire Line
+	1450 1250 1450 1150
+Wire Wire Line
+	1550 1350 1550 1150
+Wire Wire Line
+	1650 1450 1650 1150
+Wire Wire Line
+	1750 1550 1750 1150
+Wire Wire Line
+	950  1350 1350 1350
+Wire Wire Line
+	950  1450 1550 1450
+Wire Wire Line
+	950  1550 1750 1550
+Wire Wire Line
+	1750 1850 1750 1950
+Wire Wire Line
+	1550 1850 1550 1950
+Connection ~ 1550 1950
+Wire Wire Line
+	1550 1950 1750 1950
+Wire Wire Line
+	1350 1850 1350 1950
+Connection ~ 1350 1950
+Wire Wire Line
+	1350 1950 1550 1950
+Wire Wire Line
+	1150 1850 1150 1950
+Connection ~ 1150 1950
+Wire Wire Line
+	1150 1950 1350 1950
+Wire Wire Line
+	1750 1650 1750 1550
+Connection ~ 1750 1550
+Wire Wire Line
+	1550 1650 1550 1450
+Connection ~ 1550 1450
+Wire Wire Line
+	1550 1450 1650 1450
+Wire Wire Line
+	1350 1650 1350 1350
+Connection ~ 1350 1350
+Wire Wire Line
+	1350 1350 1550 1350
+Wire Wire Line
+	950  1250 1150 1250
+Wire Wire Line
+	1150 1650 1150 1250
+Connection ~ 1150 1250
+Wire Wire Line
+	1150 1250 1450 1250
 $EndSCHEMATC
