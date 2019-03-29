@@ -31,7 +31,7 @@ U 1 1 5C412D5E
 P 1750 3400
 F 0 "J101" H 1800 4317 50  0000 C CNN
 F 1 "Conn_02x16_Counter_Clockwise" H 1800 4226 50  0000 C CNN
-F 2 "DIN41612_Connectors_custom:DIN41612_B_2x16_Horizontal_counter_clockwise" H 1750 3400 50  0001 C CNN
+F 2 "DIN41612_Connectors_custom:DIN41612_D_32pol_90deg" H 1750 3400 50  0001 C CNN
 F 3 "~" H 1750 3400 50  0001 C CNN
 	1    1750 3400
 	1    0    0    -1  
