@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -1473,12 +1473,6 @@ Wire Wire Line
 	1850 6850 2050 6850
 Wire Wire Line
 	2050 6950 1850 6950
-$Sheet
-S 5350 6350 900  1300
-U 5C54653F
-F0 "Front" 50
-F1 "Front.sch" 50
-$EndSheet
 $Comp
 L power:+3.3V #PWR0102
 U 1 1 5C624F88
