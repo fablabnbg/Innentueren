@@ -5,7 +5,14 @@
 # (C) 2021 juergen@fabmail.org
 #
 # 2021-09-13 jw,   v0.1         initial draught
-# 2021-09-15 jw,   v0.2         yammel done
+# 2021-09-15 jw,   v0.2         yammel done, author & date added.
+#
+#
+# References:
+# - https://developers.podio.com/doc/items/filter-items-4496747
+# - https://github.com/podio/podio-py/blob/master/pypodio2/areas.py#L81
+# - https://pyyaml.org/wiki/PyYAMLDocumentation#Dumper
+#
 #
 # Output format example
 # =====================
@@ -28,7 +35,7 @@
 
 
 import sys,os,re
-import yaml
+import yaml, time
 
 try:
   from pypodio2 import api
@@ -38,6 +45,9 @@ except:
   sys.exit(0)
 
 outfile = 'idoors.yml'
+podio_src_ref = 'https://podio.com/fablab-nuernberg/administrativ/apps/nfc'
+now = time.strftime("%Y-%m-%d %H:%M", time.localtime())
+
 
 podio_app_id = '13414993'
 podio_client_id = 'nfc-pull'
@@ -97,7 +107,8 @@ for item in all['items']:
 # Formatting nicely is possible, but hard: https://stackoverflow.com/questions/51976149/mixing-block-and-flow-formatting-in-yaml-with-python
 # I can only guess the YAML-version. the system won't tell me.
 with open(outfile, 'w') as fp:
-  yaml.dump({'tokens': idoor_tokens}, sort_keys=True, explicit_start=True, allow_unicode=True, version=[1,0], stream=fp)
+  yaml.dump({'author': podio_src_ref, 'date': now, 'tokens': idoor_tokens},
+            sort_keys=True, explicit_start=True, allow_unicode=True, version=[1,0], stream=fp)
 
 print("%d entries written to '%s'" % (len(idoor_tokens), outfile))
 
