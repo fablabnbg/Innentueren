@@ -36,6 +36,7 @@
 
 import sys,os,re
 import yaml, time
+import pprint
 
 try:
   from pypodio2 import api
@@ -53,10 +54,10 @@ podio_app_id = '13414993'
 podio_client_id = 'nfc-pull'
 
 # Restrict data access to the needed Minimum:
-# Only columns, "ID", "Ablaufdatum", "Schluesselgewalt Lab", 
+# Only columns, "ID", "Ablaufdatum", "Schluesselgewalt Lab",
 # Only rows where 3rd column is non-empty.
 # view must be shared with team, so that the API can access it.
-podio_view_id = '51148009'      
+podio_view_id = '51148009'
 
 try:
   podio_app_token =     os.environ['PODIO_NFC_APP_TOKEN']
@@ -70,12 +71,50 @@ except:
 
 nfc = api.OAuthAppClient(podio_client_id, podio_client_secret, podio_app_id, podio_app_token)
 
+def fmt_value(field):
+  val = []
+  for v in field['values']:
+    if field['type'] == 'text':
+      val.append("'" + v['value'] + "'")
+    elif field['type'] == 'category':
+      val.append("'" + v['value']['text'] + "' (id=%d)" % v['value']['id'])
+    elif field['type'] == 'app':
+      val.append("'" + v['value']['app']['name'] + "' (app_id=%d)" % v['value']['app']['app_id'])
+    else:
+      val.append("<ERROR: field type '%s' unknown>" % field['type'])
+
+  if len(field['values']) == 1:
+    return val[0]
+  else:
+    # support multi-value items, never seen one so far...
+    r = '['
+    for v in val:
+      r = r + ' "' + v + '",'
+    if r != '[': r = r[:-1]
+    r = r + ']'
+  return r
+
+# Dump everything:
+if 1:
+  all=nfc.Item.filter(int(podio_app_id),{})
+  for item in all['items']:
+    print("Item title: %s (revision %d, %s)" % (item['title'], item['revision'], item['last_event_on']))
+    for field in item['fields']:
+      type = field['type'][:3].upper()
+      if type == 'TEX': type = 'TXT'
+      val = fmt_value(field)
+      # field['external_id'] is usually similar to label, but all lower case and with underscores.
+      print("\t%s: label=%-20s\tvalue=%s" % (type, field['label'], val))
+
+  sys.exit(0)
+
+### No longer works since 2021-12-05
 # view = nfc.View.get(podio_app_id, podio_view_id)
 # { 'layout': None, 'name': 'nfc-idoor-map', 'rights': ['view'], 'fields': {...},
 # 'sort_desc': False, 'created_by': {'user_id': 1897226, 'space_id': None, 'image': {'hosted_by': 'podio', 'hosted_by_humanized_name': 'Podio', 'thumbnail_link': 'https://d2cmuesa4snpwn.cloudfront.net/public/75327291', 'link': 'https://d2cmuesa4snpwn.cloudfront.net/public/75327291', 'file_id': 75327291, 'external_file_id': None, 'link_target': '_blank'}, 'profile_id': 106279389, 'org_id': None, 'link': 'https://podio.com/users/1897226', 'avatar': 75327291, 'type': 'user', 'last_seen_on': '2021-09-13 22:17:05', 'name': 'Jürgen Weigert'},
-# 'sort_by': 108564583, 'created_on': '2021-09-13 22:15:29', 'private': False, 
+# 'sort_by': 108564583, 'created_on': '2021-09-13 22:15:29', 'private': False,
 # 'filters': [
-#   { 'humanized_values': [{'value': 1, 'label': 'Lager'}, {'value': 2, 'label': 'Werkstatt'}, {'value': 3, 'label': 'Küche'}, {'value': 4, 'label': 'REM/Serverraum'}, {'value': 5, 'label': 'Getränkelager'}, {'value': 6, 'label': 'Dunkelkammer'}, {'value': 7, 'label': 'Besprechungszimmer'}, {'value': 8, 'label': 'Kompressorraum'}, {'value': 9, 'label': 'Abstellkammer'}], 
+#   { 'humanized_values': [{'value': 1, 'label': 'Lager'}, {'value': 2, 'label': 'Werkstatt'}, {'value': 3, 'label': 'Küche'}, {'value': 4, 'label': 'REM/Serverraum'}, {'value': 5, 'label': 'Getränkelager'}, {'value': 6, 'label': 'Dunkelkammer'}, {'value': 7, 'label': 'Besprechungszimmer'}, {'value': 8, 'label': 'Kompressorraum'}, {'value': 9, 'label': 'Abstellkammer'}],
 #     'values': [1, 2, 3, 4, 5, 6, 7, 8, 9], 'key': 226287718}], 'filter_id': 51148009, 'groupings': {}, 'type': 'saved', 'view_id': 51148009, 'grouping': {}}
 #
 ## Bummer: This view object can filter rows. But the actual view in podio can filter on both, rows and columns.
