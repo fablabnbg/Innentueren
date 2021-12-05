@@ -105,7 +105,7 @@ if 1:
       val = fmt_value(field)
       # field['external_id'] is usually similar to label, but all lower case and with underscores.
       print("\t%s: label=%-20s\tvalue=%s" % (type, field['label'], val))
-
+  print("\nTODO: relation with Innentueren is missing in podio_app_id=%d since 2021-12-05" % int(podio_app_id))
   sys.exit(0)
 
 ### No longer works since 2021-12-05
