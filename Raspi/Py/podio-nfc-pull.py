@@ -50,7 +50,8 @@ podio_src_ref = 'https://podio.com/fablab-nuernberg/administrativ/apps/nfc'
 now = time.strftime("%Y-%m-%d %H:%M", time.localtime())
 
 
-podio_app_id = '13414993'
+podio_app_id = '7284917'        # Administrativ -> Mitglieder
+podio_app_id = '13414993'       # Administrativ -> NFC
 podio_client_id = 'nfc-pull'
 
 # Restrict data access to the needed Minimum:
@@ -69,7 +70,7 @@ except:
   sys.exit(0)
 
 
-nfc = api.OAuthAppClient(podio_client_id, podio_client_secret, podio_app_id, podio_app_token)
+podio = api.OAuthAppClient(podio_client_id, podio_client_secret, podio_app_id, podio_app_token)
 
 def fmt_value(field):
   val = []
@@ -79,7 +80,7 @@ def fmt_value(field):
     elif field['type'] == 'category':
       val.append("'" + v['value']['text'] + "' (id=%d)" % v['value']['id'])
     elif field['type'] == 'app':
-      val.append("'" + v['value']['app']['name'] + "' (app_id=%d)" % v['value']['app']['app_id'])
+      val.append("'" + v['value']['app']['name'] + "' (app_id=%d, app_item_id=%d, title=%s)" % (v['value']['app']['app_id'], v['value']['app_item_id'], v['value']['title']))
     else:
       val.append("<ERROR: field type '%s' unknown>" % field['type'])
 
@@ -94,9 +95,11 @@ def fmt_value(field):
     r = r + ']'
   return r
 
-# Dump everything:
-if 1:
-  all=nfc.Item.filter(int(podio_app_id),{})
+def podio_app_dump(app_id):
+  app_id = int(app_id)
+  all=nfc.Item.filter(app_id,{'limit': 200})
+  ## FIXME: all['filtered'] == 84, but len(all['items']) == 20
+  # Do we suffer from pagination?
   for item in all['items']:
     print("Item title: %s (revision %d, %s)" % (item['title'], item['revision'], item['last_event_on']))
     for field in item['fields']:
@@ -105,11 +108,25 @@ if 1:
       val = fmt_value(field)
       # field['external_id'] is usually similar to label, but all lower case and with underscores.
       print("\t%s: label=%-20s\tvalue=%s" % (type, field['label'], val))
+
+  if all['filtered'] > len(all['items']):
+    print("ERROR: should have %d items, but got only %d" % (all['filtered'], len(all['items'])))
+
+
+# Dump everything:
+if 1:
+  podio_app_dump(podio_app_id)
   print("\nTODO: relation with Innentueren is missing in podio_app_id=%d since 2021-12-05" % int(podio_app_id))
   sys.exit(0)
 
+
+## Filter
+## From Mitglieder_app = 7284917 select M0028, aka Jürgen Weigert and M0140 aka Cedrik
+# podio.Item.filter(7284917, {'limit': 5, 'filters' : {'app_item_id': [28,140]} })
+
+
 ### No longer works since 2021-12-05
-# view = nfc.View.get(podio_app_id, podio_view_id)
+# view = podio.View.get(podio_app_id, podio_view_id)
 # { 'layout': None, 'name': 'nfc-idoor-map', 'rights': ['view'], 'fields': {...},
 # 'sort_desc': False, 'created_by': {'user_id': 1897226, 'space_id': None, 'image': {'hosted_by': 'podio', 'hosted_by_humanized_name': 'Podio', 'thumbnail_link': 'https://d2cmuesa4snpwn.cloudfront.net/public/75327291', 'link': 'https://d2cmuesa4snpwn.cloudfront.net/public/75327291', 'file_id': 75327291, 'external_file_id': None, 'link_target': '_blank'}, 'profile_id': 106279389, 'org_id': None, 'link': 'https://podio.com/users/1897226', 'avatar': 75327291, 'type': 'user', 'last_seen_on': '2021-09-13 22:17:05', 'name': 'Jürgen Weigert'},
 # 'sort_by': 108564583, 'created_on': '2021-09-13 22:15:29', 'private': False,
@@ -122,7 +139,7 @@ if 1:
 
 idoor_tokens = {}
 
-all = nfc.Item.filter_by_view(podio_app_id, podio_view_id)
+all = podio.Item.filter_by_view(podio_app_id, podio_view_id)
 
 for item in all['items']:
   ##
